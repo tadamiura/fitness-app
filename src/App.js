@@ -1,11 +1,11 @@
 import React from 'react';
-import StrenghtProgram from './components/StrenghtProgram';
+import RandomExercices from './components/RandomExercices';
 
 
 function App() {
   return (
     <div className="App">
-      <StrenghtProgram />
+      <RandomExercices />
     </div>
   );
 }
