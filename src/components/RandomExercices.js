@@ -4,27 +4,27 @@ class RandomExercices extends React.Component {
  constructor(props){
      super(props);
      this.state = {
-         showUpperOnly : false,
+        //  showUpperOnly : false,
          exercicesList: [
              {
                  exerciceName : 'pompes',
-                 partOfBody : 'upper',
+                 partOfBody : 'upper'
              },
              {
                  exerciceName : 'squat',
-                 partOfBody : 'lower',
+                 partOfBody : 'lower'
              },
              {
                 exerciceName : 'deadlift',
-                partOfBody : 'lower',
+                partOfBody : 'lower'
             },
             {
                 exerciceName : 'pull-up',
-                partOfBody : 'upper',
+                partOfBody : 'upper'
             },
             {
                 exerciceName : 'plank',
-                partOfBody : 'core',
+                partOfBody : 'core'
             },
          ]
      }
@@ -38,10 +38,14 @@ class RandomExercices extends React.Component {
  render() {
      return (
          <div>
-            <button type='button' className='callExercice' onClick={this.handleShowStrenghtExercice}>
-             Exercice Upper Body: {this.state.showUpperOnly ? 'ON' : 'OFF'}
-        </button>
-         {this.state.exercicesList.exerciceName}
+            {/* <button type='button' className='callExercice' 
+            onClick="" */}
+            {/* {this.handleShowStrenghtExercice} */}
+            {/* > */}
+             {/* Exercice Upper Body: {this.state.showUpperOnly ? 'ON' : 'OFF'}
+        </button> */}
+        <p>Hello : {this.state.exercicesList}
+        </p>
          </div>
 
      )
