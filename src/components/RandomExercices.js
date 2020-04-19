@@ -12,8 +12,20 @@ class RandomExercices extends React.Component {
              },
              {
                  exerciceName : 'squat',
-                 partOfBody : "lower",
-             }
+                 partOfBody : 'lower',
+             },
+             {
+                exerciceName : 'deadlift',
+                partOfBody : 'lower',
+            },
+            {
+                exerciceName : 'pull-up',
+                partOfBody : 'upper',
+            },
+            {
+                exerciceName : 'plank',
+                partOfBody : 'core',
+            },
          ]
      }
  }
