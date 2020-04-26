@@ -1,11 +1,13 @@
 import React from 'react';
-import Exercices from './components/Exercices'
+import BicepsExercices from './components/BicepsExercices';
+import ChestExercices from './components/ChestExercices';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-    <Exercices />
+    <BicepsExercices />
+    <ChestExercices />
     </div>
   );
 }
