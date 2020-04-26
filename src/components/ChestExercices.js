@@ -10,7 +10,7 @@ class ChestExercices extends React.Component {
 }
 
 getExercices = (number) => {
-    const url = 'https://wger.de/api/v2/exercise/?muscles=4&language=2&?is_main=True&status=2'
+    const url = 'https://wger.de/api/v2/exercise/?muscles=4&language=2&status=2'
     axios.get(url)
         .then(res => 
             this.setState({exercices : res.data.results[number]})
