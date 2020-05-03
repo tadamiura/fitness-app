@@ -1,0 +1,17 @@
+.button {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'K2D', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 50em;
+    box-shadow: 0px 0px 3px .5px rgb(82, 81, 81);
+    border: 0;
+    margin-bottom: 10px;
+  }
+
+.button:focus {
+    outline: none;
+    border: none;
+}

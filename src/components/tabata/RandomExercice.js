@@ -12,7 +12,7 @@ const tabataExercices = [
         equipment: 'none' 
     },
     {
-        name: 'lunge',
+        name: 'alternate lunge',
         part: 'lower',
         equipment: 'none' 
     },
@@ -111,17 +111,12 @@ class RandomExercice extends React.Component {
     randomNumber = () => Math.floor(Math.random() * Math.floor(tabataExercices.length))
 
     componentDidMount = () => {
-        this.getFirstRandomTabataExercice(this.randomNumber())
-        this.getSecondRandomTabataExercice(this.randomNumber())
+        this.getRandomTabataExercice(this.randomNumber())
     }
 
-    getFirstRandomTabataExercice = (number) => {
+    getRandomTabataExercice = (number) => {
         this.setState({name: tabataExercices[number].name})
     } 
-
-    getSecondRandomTabataExercice = (number) => {
-        this.setState({name: tabataExercices[number].name})
-    }
 
 
 
