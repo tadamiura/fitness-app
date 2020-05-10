@@ -12,7 +12,6 @@ class TabataHome extends React.Component {
 
     handleClick = (e) => {
         this.setState({showTabataExercices: !this.state.showTabataExercices})
-       console.log(this.state.showTabataExercices)
     }
 
     render() {
