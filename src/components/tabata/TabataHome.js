@@ -17,7 +17,6 @@ class TabataHome extends React.Component {
 
     startClick = () => {
         this.setState({showCounter: !this.state.showCounter})
-        console.log(this.state.showCounter)
     }
 
 
