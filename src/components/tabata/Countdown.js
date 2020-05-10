@@ -16,33 +16,23 @@ class Countdown extends React.Component {
                     seconds: seconds - 1
                 }))
             }
-            // if (seconds === 0) {
-            //     if (minutes === 0) {
-            //         clearInterval(this.myInterval)
-            //     } else {
-            //         this.setState(({ minutes }) => ({
-            //             minutes: minutes - 1,
-            //             seconds: 59
-            //         }))
-            //     }
-            // } 
-                if (seconds === 0) {
-                    if (sets === 0) {
-                        clearInterval(this.clearInterval)
+            if (seconds === 0) {
+                if (sets === 0) {
+                    clearInterval(this.clearInterval)
+                } else {
+                    if (sets%2 === 0){
+                        this.setState(({sets}) => ({
+                            sets: sets -1,
+                            seconds: 20
+                        }))
                     } else {
-                        if (sets%2 === 0){
-                            this.setState(({sets}) => ({
-                                sets: sets -1,
-                                seconds: 20
-                            }))
-                        } else {
-                            this.setState(({sets}) => ({
-                                sets: sets -1,
-                                seconds: 10
-                            }))
-                        }
+                        this.setState(({sets}) => ({
+                            sets: sets -1,
+                            seconds: 10
+                        }))
                     }
                 }
+            }
         }, 1000)
     }
 
@@ -54,11 +44,6 @@ class Countdown extends React.Component {
         const { minutes, seconds, sets } = this.state
         return (
             <div>
-                {/* { minutes === 0 && seconds === 0
-                    ? <h2>Well done!</h2>
-                    : <h2>Time Remaining: {minutes}:{seconds < 10 ? `0${seconds}` : seconds}</h2>
-                } */}
-
                 {<div className='counter-info'>Time Remaining: 
                 <p>{`${sets} sets left`}</p>
                 <p>{sets === 0 ? 

@@ -21,7 +21,7 @@ class TabataHome extends React.Component {
 
 
     render() {
-        const { showTabataExercices, showCounter } = this.state
+        const { showTabataExercices, showCounter, sets, tabataExercices } = this.state
         return(
             <div className='random-tabata'>
                 <h2>Your random tabata of the day</h2>
