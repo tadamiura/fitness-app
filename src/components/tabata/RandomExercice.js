@@ -118,8 +118,6 @@ class RandomExercice extends React.Component {
         this.setState({name: tabataExercices[number].name})
     } 
 
-
-
     render() {
         return(
             <div className='random-exerice'>
