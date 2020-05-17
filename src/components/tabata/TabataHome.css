@@ -1,0 +1,39 @@
+.random-tabata {
+    font-family: 'Cabin', sans-serif;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    color: whitesmoke;
+    height: 40em;
+    margin-top: 3em;
+}
+
+.random-tabata h2 {
+    font-weight: bold;
+    font-size: large;
+}
+
+.random-tabata h3 {
+    font-style: italic;
+    font-size: medium;
+}
+
+.tabata-button, .start-tabata-button {
+	display: inline-block;
+    position: relative;
+    font-family: 'Anton', sans-serif;    
+    font-size: large;
+    padding: 1.2em 2em;
+    text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+	color: #c24848;
+    background: linear-gradient(135deg, #fcb26c, #f4ff5b);
+    border-radius: 40px;
+}
+
+.exercice {
+    font-family: 'Anton', sans-serif;    
+    font-size: 2rem;
+    color: #fcb26c;
+}

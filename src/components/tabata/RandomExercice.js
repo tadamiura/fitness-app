@@ -99,14 +99,12 @@ const tabataExercices = [
 ]
 
 class RandomExercice extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {
+        state = {
             name: "",
             part: "",
             equipment: ""
         }
-    }
+    
 
     randomNumber = () => Math.floor(Math.random() * Math.floor(tabataExercices.length))
 

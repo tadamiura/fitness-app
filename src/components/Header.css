@@ -1,0 +1,11 @@
+.header {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    color: #c24848;
+    text-align: center;
+    background: linear-gradient(#fcb26c, #f4ff5b);
+}
+
+.header h1 {
+    margin : 0;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 // import StrenghtProgram from './components/StrenghtProgram';
+import Header from './components/Header';
 import TabataHome from './components/tabata/TabataHome';
 
 import './App.css';
@@ -7,6 +8,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <Header />
       <TabataHome />      
     </div>
   )
