@@ -43,6 +43,7 @@ class Countdown extends React.Component {
 
     render() {
         const { seconds, sets } = this.state
+        // const { name } = this.props
         return (
             <div className="container-countdown">
                 {<div className="counter-info">
@@ -53,9 +54,15 @@ class Countdown extends React.Component {
                              After each training, you must be pround of you !`}
                         </p>
                         :
-                        <p className="secondes">
+                        <ul>
+                        <li className="secondes">
                             {`${seconds}`}
-                        </p>
+                        </li>
+                        <li>
+                            Doing this Exercice {/* {`${name}`} */}
+                        </li>
+
+                        </ul>
                     }
                     <h4>{`${sets} sets left`}</h4>
                     <div className="container-advices">{sets % 2 === 1 ?

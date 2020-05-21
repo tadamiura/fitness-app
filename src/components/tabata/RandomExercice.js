@@ -4,120 +4,118 @@ const tabataExercices = [
     {
         name: 'push-up',
         part: 'upper',
-        equipment: 'none' 
+        equipment: 'none'
     },
     {
         name: 'squat',
         part: 'lower',
-        equipment: 'none' 
+        equipment: 'none'
     },
     {
         name: 'alternate lunge',
         part: 'lower',
-        equipment: 'none' 
+        equipment: 'none'
     },
     {
         name: 'sit-up',
         part: 'abs',
-        equipment: 'none' 
+        equipment: 'none'
     },
     {
         name: 'pull-up',
         part: 'upper',
-        equipment: 'fix bar' 
+        equipment: 'fix bar'
     },
     {
         name: 'plank',
         part: 'abs',
-        equipment: 'none' 
+        equipment: 'none'
     },
     {
         name: 'mountain climber',
         part: 'abs',
-        equipment: 'none' 
+        equipment: 'none'
     },
     {
         name: 'swing',
         part: 'lower',
-        equipment: 'dumbbell' 
+        equipment: 'dumbbell'
     },
     {
         name: 'deadlift',
         part: 'lower',
-        equipment: 'barbell' 
+        equipment: 'barbell'
     },
     {
         name: 'hips thruster',
         part: 'lower',
-        equipment: 'none' 
+        equipment: 'none'
     },
     {
         name: 'bench',
         part: 'upper',
-        equipment: 'barbell' 
+        equipment: 'barbell'
     },
     {
         name: 'shoulder press',
         part: 'upper',
-        equipment: 'barbell' 
+        equipment: 'barbell'
     },
     {
         name: 'rowing',
         part: 'upper',
-        equipment: 'barbell' 
+        equipment: 'barbell'
     },
     {
         name: 'sumo squat',
         part: 'lower',
-        equipment: 'none' 
+        equipment: 'none'
     },
     {
         name: 'squat jump',
         part: 'lower',
-        equipment: 'none' 
+        equipment: 'none'
     },
     {
         name: 'alternate lunge jump',
         part: 'lower',
-        equipment: 'none' 
+        equipment: 'none'
     },
     {
         name: 'V-up',
         part: 'abs',
-        equipment: 'none' 
+        equipment: 'none'
     },
     {
         name: 'turkish get-up',
         part: 'abs',
-        equipment: 'dumbbell' 
+        equipment: 'dumbbell'
     },
     {
         name: 'burpee',
         part: 'abs',
-        equipment: 'none' 
+        equipment: 'none'
     }
 ]
 
 class RandomExercice extends React.Component {
-        state = {
-            name: "",
-            part: "",
-            equipment: ""
-        }
-    
+    state = {
+        name: '',
+        part: '',
+        equipment: ''
+    }
 
     randomNumber = () => Math.floor(Math.random() * Math.floor(tabataExercices.length))
 
-    componentDidMount = () => {
-        this.getRandomTabataExercice(this.randomNumber())
-    }
-
     getRandomTabataExercice = (number) => {
-        this.setState({name: tabataExercices[number].name})
-    } 
+        this.setState({ name: tabataExercices[number].name })}
+
+    componentDidMount() {
+            this.getRandomTabataExercice(this.randomNumber())
+        }
 
     render() {
-        return(
+        return (
             <div className='random-exerice'>
                 {this.state.name}
             </div>
