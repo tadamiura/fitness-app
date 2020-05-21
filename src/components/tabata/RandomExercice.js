@@ -108,13 +108,15 @@ class RandomExercice extends React.Component {
     randomNumber = () => Math.floor(Math.random() * Math.floor(tabataExercices.length))
 
     getRandomTabataExercice = (number) => {
-        this.setState({ name: tabataExercices[number].name })}
+        this.setState({ name: tabataExercices[number].name })
+    }
 
     componentDidMount() {
-            this.getRandomTabataExercice(this.randomNumber())
-        }
+        this.getRandomTabataExercice(this.randomNumber())
+    }
 
     render() {
+
         return (
             <div className='random-exerice'>
                 {this.state.name}
