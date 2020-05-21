@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Countdown.css'
 
 class Countdown extends React.Component {
@@ -55,13 +56,9 @@ class Countdown extends React.Component {
                         </p>
                         :
                         <ul>
-                        <li className="secondes">
-                            {`${seconds}`}
-                        </li>
-                        <li>
-                            Doing this Exercice {/* {`${name}`} */}
-                        </li>
-
+                            <li className="secondes">
+                                {`${seconds}`}
+                            </li>
                         </ul>
                     }
                     <h4>{`${sets} sets left`}</h4>
@@ -71,6 +68,7 @@ class Countdown extends React.Component {
                     }
                     </div>
                 </div>}
+                    <Link to='/' >Back</Link>
             </div>
         )
     }
