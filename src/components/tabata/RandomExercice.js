@@ -92,7 +92,7 @@ const tabataExercices = [
         equipment: 'dumbbell'
     },
     {
-        name: 'burpee',
+        name: 'burpees',
         part: 'abs',
         equipment: 'none'
     }
@@ -108,7 +108,7 @@ class RandomExercice extends React.Component {
     randomNumber = () => Math.floor(Math.random() * Math.floor(tabataExercices.length))
 
     getRandomTabataExercice = (number) => {
-        this.setState({ name: tabataExercices[number].name })
+        this.setState({ name: tabataExercices[number].name, equipment: tabataExercices[number].equipment })
     }
 
     componentDidMount() {
@@ -116,10 +116,11 @@ class RandomExercice extends React.Component {
     }
 
     render() {
-
+        const { name, equipment } = this.state
         return (
             <div className='random-exerice'>
-                {this.state.name}
+                {`${name} and you need ${equipment} equipment`}
+                
             </div>
         )
     }
