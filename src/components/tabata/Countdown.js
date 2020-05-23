@@ -1,4 +1,5 @@
 import React from 'react'
+import SetCountdown from './SetCountdown'
 import { Link } from 'react-router-dom'
 import './Countdown.css'
 
@@ -53,13 +54,14 @@ class Countdown extends React.Component {
                         <p className="congrats-message">
                             {`Congrats this HIIT is over.
                              After each training, you must be pround of you !`}
+                             <SetCountdown />
                         </p>
                         :
                             <p className="secondes">
                                 {`${seconds}`}
                             </p>
                     }
-                    <h4>{`${sets} sets left`}</h4>
+                    <h4>{sets === !0 && `${sets} sets left`}</h4>
                     <div className="container-advices">{sets % 2 === 1 ?
                         <h4>Do as faster as possible the exercice</h4> :
                         <h4>Rest Time : breathe, take the control of your heartbeat</h4>
@@ -69,7 +71,7 @@ class Countdown extends React.Component {
                     <Link to='/' >
                         <input type="button"
                         className="back-button"
-                        value="Back"
+                        value={sets === 0 ? `get a new tabata training now` : `Back` }
                         />
                     </Link>
             </div>
