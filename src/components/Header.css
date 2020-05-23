@@ -1,0 +1,17 @@
+.header {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 25px;
+    color: #c24848;
+    text-align: center;
+    margin: 25px 20px 0px 20px;
+    /* background: linear-gradient(#fcb26c, #f4ff5b); */
+}
+
+.header h1 {
+    margin : 0;
+}
+
+.ww-logo{
+    width: 200px;
+    height: 200px;
+}

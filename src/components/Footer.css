@@ -1,0 +1,35 @@
+footer {
+    font-family: 'Cabin', sans-serif;
+    color: #c24848;
+    background: linear-gradient(135deg, #fcb26c, #f4ff5b);
+    margin-top: 100px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin: 10px 20px 0 20px;
+    padding : 10px 0 0 20px
+}
+
+li{
+    font-weight: bold;
+    font-size: larger;
+}
+
+.container-rs{
+    display: flex;
+    justify-content: space-around;
+}
+
+.description {
+    font-style: italic;
+}
+
+footer img {
+    height: 30px;
+    width: 30px;
+    margin : 5px
+}
