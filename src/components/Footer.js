@@ -7,19 +7,31 @@ import './Footer.css'
 
 
 const Footer = () => {
-    return(
+    return (
         <div className="footer">
             <footer>
                 <ul>
                     <li className="about-me">About me</li>
-                    <p className="description">Tadatoshi Miura, french handball strenght and conditioning coach, fitness coach and web developper</p>
+                    <p className="description">Tadatoshi Miura, french strenght and conditioning coach (handball, football, kick-boxing...), fitness coach and web developper</p>
+                    <li> About tabata training</li>
+                    <div className="container-links">
+                        <p>
+                            <a href="https://www.doctissimo.fr/forme/fitness/methode-tabata#">Doctissimo link</a>
+                        </p>
+                        <p>
+                            <a href="https://www.runtastic.com/blog/fr/tabata-entrainement-par-intervalles/">Runtastic link</a>
+                        </p>
+                        <p>
+                            <a href="https://en.wikipedia.org/wiki/Izumi_Tabata">Izumi Tabata wiki link</a>
+                        </p>
+                    </div>
                     <li className="contact">Contact</li>
                     <p><a href="mailto:tadamiura@gmail.com">my email</a></p>
                     <li>Follow me</li>
                     <div className="container-rs">
-                    <p><a href="https://www.instagram.com/tadmildura/"><img src={instagram} alt="instagram"></img></a></p>
-                    <p><a href="https://www.linkedin.com/in/tadatoshimiura/"><img src={linkedin} alt="linkedin"></img></a></p>
-                    <p><a href="https://github.com/tadamiura"><img src={github} alt="linkedin"></img></a></p>
+                        <p><a href="https://www.instagram.com/tadmildura/"><img src={instagram} alt="instagram"></img></a></p>
+                        <p><a href="https://www.linkedin.com/in/tadatoshimiura/"><img src={linkedin} alt="linkedin"></img></a></p>
+                        <p><a href="https://github.com/tadamiura"><img src={github} alt="linkedin"></img></a></p>
                     </div>
                 </ul>
             </footer>
