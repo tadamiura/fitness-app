@@ -8,7 +8,6 @@ const TabataHome = () => {
     const [showTabataExercices, setShowTabataExercices] = useState(false);
     const [showCounter, setShowCounter] = useState(false);
     
-    console.log('showCounter & TabataExercice', showCounter, showTabataExercices)
     return (
         <div className='random-tabata'>
             <h2>Your random tabata of the day</h2>
