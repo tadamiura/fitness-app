@@ -55,11 +55,9 @@ class Countdown extends React.Component {
                              After each training, you must be pround of you !`}
                         </p>
                         :
-                        <ul>
-                            <li className="secondes">
+                            <p className="secondes">
                                 {`${seconds}`}
-                            </li>
-                        </ul>
+                            </p>
                     }
                     <h4>{`${sets} sets left`}</h4>
                     <div className="container-advices">{sets % 2 === 1 ?
@@ -68,7 +66,12 @@ class Countdown extends React.Component {
                     }
                     </div>
                 </div>}
-                    <Link to='/' >Back</Link>
+                    <Link to='/' >
+                        <input type="button"
+                        className="back-button"
+                        value="Back"
+                        />
+                    </Link>
             </div>
         )
     }

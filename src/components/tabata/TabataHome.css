@@ -4,7 +4,7 @@
     background: rgb(0, 0, 0);
     color: whitesmoke;
     height: 40em;
-    margin-top: 3em;
+    margin: 3em 20px 0 20px;
 }
 
 .random-tabata h2 {
@@ -17,12 +17,12 @@
     font-size: medium;
 }
 
-.tabata-button, .start-tabata-button {
+.tabata-button, .start-tabata-button, .back-button {
 	display: inline-block;
     position: relative;
     font-family: 'Anton', sans-serif;    
     font-size: large;
-    padding: 1.2em 2em;
+    padding: 1em 1.8em;
     text-decoration: none;
 	text-align: center;
 	cursor: pointer;
@@ -30,6 +30,10 @@
 	color: #c24848;
     background: linear-gradient(135deg, #fcb26c, #f4ff5b);
     border-radius: 40px;
+}
+
+.back-button{
+    margin-bottom: 40px;
 }
 
 .exercice {
