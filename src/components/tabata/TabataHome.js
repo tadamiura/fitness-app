@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
-import RandomExercice from './RandomExercice'
 import Countdown from './Countdown'
+import RandomExercice from './RandomExercice'
 import { Link } from 'react-router-dom'
 import './TabataHome.css'
 
 const TabataHome = () => {
     const [showTabataExercices, setShowTabataExercices] = useState(false);
     const [showCounter, setShowCounter] = useState(false);
-
+    
     console.log('showCounter & TabataExercice', showCounter, showTabataExercices)
     return (
         <div className='random-tabata'>
@@ -43,7 +43,7 @@ const TabataHome = () => {
                     onClick={() => setShowCounter(!showCounter)}
                 />
             </Link>
-            {showCounter ? (<Countdown />) : (
+            {showCounter ? (<Countdown /> ) : (
                 <p>
                     Check if you got all your equipment before to start
                 </p>)}
