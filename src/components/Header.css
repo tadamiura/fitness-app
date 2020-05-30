@@ -4,11 +4,13 @@
     color: #c24848;
     text-align: center;
     margin: 25px 20px 0px 20px;
-    /* background: linear-gradient(#fcb26c, #f4ff5b); */
+    background: linear-gradient(#fcb26c, #f4ff5b);
+    margin: 0;
 }
 
 .header h1 {
     margin : 0;
+    padding-top: 20px ;
 }
 
 .ww-logo{

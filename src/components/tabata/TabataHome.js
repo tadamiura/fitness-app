@@ -4,6 +4,8 @@ import RandomExercice from './RandomExercice'
 import { Link } from 'react-router-dom'
 import './TabataHome.css'
 
+
+
 const TabataHome = () => {
     const [showTabataExercices, setShowTabataExercices] = useState(false);
     const [showCounter, setShowCounter] = useState(false);

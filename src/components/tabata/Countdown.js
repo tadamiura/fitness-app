@@ -1,6 +1,7 @@
 import React from 'react'
 import SetCountdown from './SetCountdown'
 import { Link } from 'react-router-dom'
+// import beep9 from '../../beep-09.mp3'
 import './Countdown.css'
 
 class Countdown extends React.Component {
@@ -20,6 +21,7 @@ class Countdown extends React.Component {
                 }))
             }
             if (seconds === 0) {
+
                 if (sets === 0) {
                     clearInterval(this.clearInterval)
                 } else {
