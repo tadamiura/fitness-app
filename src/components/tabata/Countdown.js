@@ -1,6 +1,7 @@
 import React from 'react'
 import SetCountdown from './SetCountdown'
 import { Link } from 'react-router-dom'
+import DisplayExercice from './DisplayExercice'
 // import beep9 from '../../beep-09.mp3'
 import './Countdown.css'
 
@@ -64,7 +65,7 @@ class Countdown extends React.Component {
                     }
                     <h4>{sets === !0 && `${sets} sets left`}</h4>
                     <div className="container-advices">{sets % 2 === 1 ?
-                        <h4>Do as faster as possible the exercice</h4> :
+                        <h4>Do as faster as possible the exercice {this.props.name}</h4> :
                         <h4>Rest Time : breathe, take the control of your heartbeat</h4>
                     }
                     </div>

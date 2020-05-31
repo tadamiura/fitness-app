@@ -1,4 +1,5 @@
 import React from 'react'
+import DisplayExercice from './DisplayExercice'
 
 const tabataExercices = [
     {
@@ -127,16 +128,7 @@ class RandomExercice extends React.Component {
     randomNumber = () => Math.floor(Math.random() * Math.floor(tabataExercices.length))
 
     getRandomTabataExercice = (number) => {
-        this.setState({ name: tabataExercices[number].name, equipment: tabataExercices[number].equipment })
-    }
-
-    getExerciceNoneEquipment = () => {
-        console.log(this.state.equipment)
-        this.setState({equipment: 'none'})
-    }
-
-    getExerciceDumbbellEquipment = () => {
-        this.setState({equipment: 'dumbbell'})
+        this.setState({ name: tabataExercices[number].name, equipment: tabataExercices[number].equipment, id: tabataExercices[number].id })
     }
 
     componentDidMount() {
@@ -144,15 +136,10 @@ class RandomExercice extends React.Component {
     }
 
     render() {
-        const { name, equipment } = this.state
+        const { name, equipment, id } = this.state
         return (
-                <div>
-                    <p className='random-exerice'>
-                    {`${name}`} 
-                    </p>
-                    <p className="equipement-description">
-                {`and you need ${equipment} equipment`}                
-                    </p>
+            <div>
+                <DisplayExercice name={name} equipment={equipment} id={id} />
             </div>
         )
     }
