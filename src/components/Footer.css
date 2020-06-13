@@ -1,8 +1,30 @@
-footer {
+div .footer .about-me{
     font-family: 'Cabin', sans-serif;
     color: #c24848;
-    background: linear-gradient(135deg, #fcb26c, #f4ff5b);
-    margin-top: 100px;
+    /* margin-top: 100px; */
+    background-color: #fcb26c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+
+h3 .about-me {
+    margin : 0
+}
+
+.description {
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    margin: 0 10px 0 10px
+}
+
+.links-footer {
+    font-family: 'Cabin', sans-serif;
+    color: #c24848;
+    background: linear-gradient(#fcb26c, #f4ff5b);
+    /* margin-top: 100px; */
 }
 
 ul{
@@ -10,7 +32,7 @@ ul{
     flex-direction: column;
     align-items: center;
     list-style-type: none;
-    margin: 10px 20px 0 20px;
+    margin: 0 20px 0 20px;
     padding : 10px 0 0 20px
 }
 
@@ -28,7 +50,7 @@ li{
     font-style: italic;
 }
 
-footer img {
+.links-footer img {
     height: 30px;
     width: 30px;
     margin : 5px

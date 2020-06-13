@@ -14,7 +14,6 @@ getExercices = (number) => {
     axios.get(url)
         .then(res => 
             this.setState({exercices : res.data.results[number]})
-        // console.log(res)
         )
     }
 
@@ -33,18 +32,6 @@ render() {
             <p>name : {name} </p>
     <p>description : {description}</p>
         </div>
-        // <>
-        // {/* {!this.state.isLoaded ? (<div>Loading...</div>) : (<div>
-        //     exercice) */}
-        //     <div>
-        //         {/* {this.state.exercices.map(exercice => (
-        //         <DisplayExercice exercice={exercice} key={exercice.id}/>
-        //     ))
-        //     } */}
-        //     </div>
-        // )}
-        
-        // </>
         )
     }
 }

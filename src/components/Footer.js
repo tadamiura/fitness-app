@@ -9,10 +9,12 @@ import './Footer.css'
 const Footer = () => {
     return (
         <div className="footer">
-            <footer>
-                <ul>
-                    <li className="about-me">About me</li>
+            <footer className="about-me">
+                    <h3 className="about-me">About me</h3>
                     <p className="description">Tadatoshi Miura, french strenght and conditioning coach (handball, football, kick-boxing...), fitness coach and web developper</p>
+            </footer>
+            <footer className="links-footer">
+                <ul>
                     <li> About tabata training</li>
                     <div className="container-links">
                         <p>
