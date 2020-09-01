@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import DisplayExercice from './DisplayExercice'
 
 const RandomExercice = () => {
 
@@ -20,9 +21,10 @@ const RandomExercice = () => {
     return exercices === null ?
     <p>Loading ...</p>
     :(
-        <div className='random-exercice' id={exercices.id}>
-            {exercices.name}
-        </div>
+        // <div className='random-exercice' id={exercices.id}>
+        //     {exercices.name}
+        // </div>
+        <DisplayExercice exercices={exercices} />
     )
 
 }
