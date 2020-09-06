@@ -10,7 +10,6 @@ const DisplayExercice = ({ id, exercices }) =>{
         axios.get(url)
         .then((res) => {
             setMedias(res.data[0])
-            || console.log(res.data[0])
         }
     )
 }
