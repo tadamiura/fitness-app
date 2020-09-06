@@ -21,7 +21,7 @@ const RandomExercice = () => {
     return exercices === null ?
     <div>Loading ...</div>
     :(
-        <DisplayExercice exercices={exercices} />
+        <DisplayExercice id={exercices.id} exercices={exercices} />
     )
 
 }
