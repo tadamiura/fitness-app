@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import ReactPlayer from 'react-player'
 
 const DisplayExercice = ({ id, exercices }) =>{
 
@@ -18,12 +19,12 @@ const DisplayExercice = ({ id, exercices }) =>{
     return(
         medias === null ?
         <div>Loading ...</div> : 
-        <div className='random-exercice' id={exercices.id}>
-        {medias.media_type === "video" ?        
-        <a target='blank' href={medias.url_name}>{exercices.name}</a>
-        : 
-        <p>{exercices.name}</p>
-        }
+        <div className='random-exercice' id={exercices.id}> 
+        {exercices.name}
+        <ReactPlayer 
+        url={medias.url_name} 
+        controls={true}
+        />
         </div>
     )
 }
