@@ -26,8 +26,8 @@
 	text-align: center;
 	cursor: pointer;
 	user-select: none;
-	color: #c24848;
-    background: linear-gradient(135deg, #fcb26c, #f4ff5b);
+	color: #00ea92;
+    background: linear-gradient(135deg, #2e437e, #406bdf);
     border-radius: 40px;
 }
 
@@ -38,7 +38,7 @@
 .exercice {
     font-family: 'Anton', sans-serif;    
     font-size: 2rem;
-    color: #c24848;
+    color: #00ea92;
 }
 
 p .equipement-description{
