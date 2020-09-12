@@ -19,7 +19,7 @@ const RandomExercice = () => {
     useEffect(() => getExercices(), [])
   
     return exercices === null ?
-    <div>Loading ...</div>
+    <div className='display-exercice'>Loading ...</div>
     :(
         <DisplayExercice id={exercices.id} exercices={exercices} />
     )
