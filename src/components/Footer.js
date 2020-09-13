@@ -12,8 +12,8 @@ const Footer = () => {
             <footer className="about-me">
                     <h3 className="about-me">About me</h3>
                     <p className="description">Tadatoshi Miura, french strenght and conditioning coach (handball, football, kick-boxing...), fitness coach and web developper</p>
-            </footer>
-            <footer className="links-footer">
+            {/* </footer> */}
+            <span className="links-footer">
                 <ul>
                     <li> About tabata training</li>
                     <div className="container-links">
@@ -36,6 +36,7 @@ const Footer = () => {
                         <p><a href="https://github.com/tadamiura"><img src={github} alt="linkedin"></img></a></p>
                     </div>
                 </ul>
+                </span>
             </footer>
         </div>
     )
