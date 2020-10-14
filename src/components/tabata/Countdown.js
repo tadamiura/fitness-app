@@ -69,12 +69,14 @@ class Countdown extends React.Component {
                     }
                     </div>
                 </div>}
+                <div className="container-button">
                     <Link to='/' >
                         <input type="button"
                         className="back-button"
                         value={sets === 0 ? `get a new tabata training now` : `Back` }
                         />
                     </Link>
+                </div>
             </div>
         )
     }
