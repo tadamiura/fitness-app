@@ -7,7 +7,7 @@ const RandomExercice = () => {
     const [exercices, setExercices] = useState(null)
 
     const getExercices = () => {
-        const url = 'http://localhost:8080/api/exercice'
+        const url = 'http://localhost:8080/api/exercices'
         axios.get(url)
         .then((res) => {
             const random = Math.floor(Math.random() * Math.floor(res.data.length))

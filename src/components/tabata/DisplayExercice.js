@@ -9,7 +9,7 @@ const DisplayExercice = ({ id, exercices }) =>{
     const [medias, setMedias] = useState(null)
 
     const getMedias = () => {
-        const url = `http://localhost:8080/api/exercice/${id}/media`
+        const url = `http://localhost:8080/api/exercices/${id}/medias`
         axios.get(url)
         .then((res) => {
             setMedias(res.data[0])
