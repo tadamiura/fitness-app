@@ -39,6 +39,7 @@
     font-family: 'Anton', sans-serif;    
     font-size: 2rem;
     color: #00ea92;
+    font-weight: 100;
 }
 
 p .equipement-description{
@@ -46,5 +47,6 @@ p .equipement-description{
     font-size: 1.5rem;
     text-align: center;
     background: white;
-    color: black;}
+    color: black;
+}
 

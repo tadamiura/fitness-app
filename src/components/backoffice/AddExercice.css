@@ -1,0 +1,25 @@
+.form-button-add {
+    margin: 0 0 20px 0;
+    display: inline-block;
+    position: relative;
+    font-family: 'Anton', sans-serif;    
+    font-size: small;
+    padding: 1em 1.8em;
+    text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+	color: #00ea92;
+    background: linear-gradient(135deg, #2e437e, #406bdf);
+    border-radius: 40px;
+}
+
+.add-exercice-form{
+    margin: 0 0 0 20px
+}
+
+.form-input {
+    margin: 7px 0 15px 0;
+    width: 280px;
+    height: 25px;
+}
