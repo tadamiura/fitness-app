@@ -1,6 +1,5 @@
 import React from 'react';
 import AddExercice from './components/backoffice/AddExercice';
-// import AddMedia from './components/backoffice/AddMedia';
 import BurgerMenu from './components/BurgerMenu';
 import Countdown from './components/tabata/Countdown';
 import Footer from './components/Footer'
@@ -22,7 +21,6 @@ const App = () => {
           <Route path="/countdown" component={Countdown} />
           <Route exact path="/back-office" component={Home} />
           <Route path="/back-office/new-exercice" component={AddExercice} />
-          {/* <Route path="/back-office/new-exercice/media" component={AddMedia} /> */}
           </Switch>
         <Footer />
         </div>
