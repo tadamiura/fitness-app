@@ -22,7 +22,7 @@ const TabataHome = () => {
                 onClick={() => setShowTabataExercices(!showTabataExercices)}
             />
             {showTabataExercices? (
-                <p className='tabata-exercices'>First, fast as you can, do 20 seconds of
+                <h4 className='tabata-exercices'>First, fast as you can, do 20 seconds of
                     <span className="exercice">
                         <RandomExercice />
                     </span>
@@ -32,7 +32,7 @@ const TabataHome = () => {
                         <RandomExercice />
                     </span>
               Then, 10 secondes off. Repeat this loop until your reach 4 minutes
-                </p>
+                </h4>
             ) : (
                     <p>Are you ready ?</p>
                 )}

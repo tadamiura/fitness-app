@@ -1,7 +1,7 @@
 .container-countdown {
     display: flex;
     flex-direction: column;
-    margin: 1em 0 2em 0;
+    margin: 1em 0 4em 0;
     height: 500px;
     background-color: white;
     color: black;
@@ -46,4 +46,8 @@
     margin-bottom: 2em;
     font-family: 'Cabin', sans-serif;
     font-size: x-large;
+}
+
+.back-button {
+
 }
