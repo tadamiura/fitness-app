@@ -1,0 +1,16 @@
+@import '_variables';
+
+.default-button {
+	display: inline-block;
+    position: relative;
+    font-family: $secondary-font-family;    
+    font-size: large;
+    padding: 1em 1.8em;
+    text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+	color: $green-logo;
+    background: linear-gradient(135deg, #2e437e, #406bdf);
+    border-radius: 40px;
+}

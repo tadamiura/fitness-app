@@ -8,7 +8,7 @@ import Home from './components/backoffice/Home';
 import { Switch, Route } from 'react-router-dom'
 import TabataHome from './components/tabata/TabataHome';
 
-import './App.css';
+import './App.scss';
 
 const App = () => {
   

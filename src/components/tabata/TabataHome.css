@@ -1,12 +1,12 @@
-.random-tabata {
+/* .random-tabata {
     font-family: 'Cabin', sans-serif;
     text-align: center;
     background: white;
     color: black;
     margin: 3em 20px 0 20px;
-}
+} */
 
-.random-tabata h2 {
+/* .random-tabata h2 {
     font-weight: bold;
     font-size: large;
 }
@@ -14,8 +14,8 @@
 .random-tabata h3 {
     font-style: italic;
     font-size: medium;
-}
-
+} */
+/* 
 .tabata-button, .start-tabata-button, .back-button {
 	display: inline-block;
     position: relative;
@@ -33,8 +33,8 @@
 
 .back-button{
     margin-bottom: 40px;
-}
-
+} */
+/* 
 .exercice {
     font-family: 'Anton', sans-serif;    
     font-size: 2rem;
@@ -48,5 +48,28 @@ p .equipement-description{
     text-align: center;
     background: white;
     color: black;
+} */
+
+/* Grid */
+.bloc-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    grid-gap: 20px;
+}
+
+.bloc {
+    /* display: inline-block; */
+    /* position: relative; */
+    font-family: 'Anton', sans-serif;    
+    font-size: large;
+    /* padding: 1em 1.8em; */
+    text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+	color: #00ea92;
+    background: linear-gradient(135deg, #2e437e, #406bdf);
+    border-radius: 40px;
 }
 

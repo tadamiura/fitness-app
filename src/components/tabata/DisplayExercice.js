@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import ReactPlayer from 'react-player'
 
-import '../../App.css'
+import '../../App.scss'
 
 const DisplayExercice = ({ id, exercices }) =>{
 

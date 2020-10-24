@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Ceviche+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+@import './sass/variables';
+@import './sass/buttons.scss';
+
+body {
+    background-color: $default-backgroud-color;
+}
+
+.random-tabata {
+    font-family: $default-font-family;
+    text-align: center;
+    background: $default-backgroud-color;
+    color: $default-color;
+    margin: 3em 20px 0 20px;
+}
+
+.tabata-button, .start-tabata-button, .back-button {
+    @extend .default-button;
+}
+
+.back-button{
+    margin-bottom: 40px;
+}
+
+.random-tabata h2 {
+    font-weight: bold;
+    font-size: large;
+}
+
+.random-tabata h3 {
+    font-style: italic;
+    font-size: medium;
+}
+
+.exercice {
+    font-family: $secondary-font-family;    
+    font-size: 2rem;
+    color: $green-logo;
+    font-weight: 100;
+}
