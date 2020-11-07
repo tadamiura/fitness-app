@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Ceviche+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+@import './sass/variables';
+@import './sass/buttons.scss';
+
+body {
+    background-color: $default-backgroud-color;
+}
+
+h2 {
+    margin: 25px 10%;
+    font-size: $title-font-size;
+    text-transform: uppercase;
+}
+
+.random-tabata {
+    font-family: $default-font-family;
+    text-align: center;
+    background: $default-backgroud-color;
+    color: $default-color;
+    margin: 3em 20px 0 20px;
+}
+
+.tabata-button, .start-tabata-button, .back-button {
+    @extend .default-button;
+}
+
+.back-button{
+    margin-bottom: 40px;
+}
+
+.random-tabata h2 {
+    font-weight: bold;
+    font-size: large;
+}
+
+.random-tabata h3 {
+    font-style: italic;
+    font-size: medium;
+}
+
+.exercice {
+    font-family: $secondary-font-family;    
+    font-size: 2rem;
+    color: $green-logo;
+    font-weight: 100;
+}
+
+form {
+    width: 80%;
+    margin: 25px auto;
+    .label-input-container {
+        margin: 16px 0;
+        label {
+            font-size: $secondary-font-size;        }
+        input {
+            margin-top: 10px;
+            width: 90%;
+            height: 25px;
+        }
+        .form-error-message {
+            color: red;
+            font-size: 10px;
+        }
+        .password-format-condition {
+            font-size: $text-font-size;
+            font-style: italic;
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+    }
+        button {
+        width: 50%;
+        height: 32px;
+        background: $backgroud-blue;
+        color: $green-logo;
+        border-radius: 10px;
+        }
+}

@@ -1,14 +1,15 @@
 import React from 'react';
-import AddExercice from './components/backoffice/AddExercice';
+import AddExercice from './components/backoffice/AddExercice'
 import BurgerMenu from './components/BurgerMenu';
-import Countdown from './components/tabata/Countdown';
+import Countdown from './components/tabata/Countdown'
 import Footer from './components/Footer'
-import Header from './components/Header';
-import Home from './components/backoffice/Home';
+import Header from './components/Header'
+import Home from './components/backoffice/Home'
+import TabataHome from './components/tabata/TabataHome'
+import Registration from './components/tabata/Registration'
 import { Switch, Route } from 'react-router-dom'
-import TabataHome from './components/tabata/TabataHome';
 
-import './App.css';
+import './App.scss';
 
 const App = () => {
   
@@ -19,6 +20,7 @@ const App = () => {
           <Switch>
           <Route exact path="/" component={TabataHome}/>
           <Route path="/countdown" component={Countdown} />
+          <Route path="/registration" component={Registration}/>
           <Route exact path="/back-office" component={Home} />
           <Route path="/back-office/new-exercice" component={AddExercice} />
           </Switch>
