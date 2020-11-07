@@ -31,7 +31,7 @@ function Registration() {
         <h2>Inscription</h2>
         <form onSubmit={handleSubmit(onSubmit)}>
             <div className="label-input-container">
-              <label >Prénom :</label>
+              <label >Prénom :</label><br></br>
               <input 
               name="prenom" 
               ref={register({
@@ -43,7 +43,7 @@ function Registration() {
               <span className="form-error-message">{errors.prenom && "Un prénom est requis"}</span>
             </div>
             <div className="label-input-container">
-              <label >Nom :</label>
+              <label >Nom :</label><br></br>
               <input 
               name="nom" 
               ref={register({
@@ -55,7 +55,7 @@ function Registration() {
               <span className="form-error-message">{errors.nom && "Un nom est requis"}</span>
             </div>
             <div className="label-input-container">
-              <label >Votre adresse mail :</label>
+              <label >Votre adresse mail :</label><br></br>
               <input 
               name="email" 
               ref={register({
