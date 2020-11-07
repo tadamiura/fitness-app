@@ -18,7 +18,7 @@ const AddExercice = () => {
         e.preventDefault()
         axios
         .post(url, name)
-        .then((res) => res.data || console.log(res.data)) 
+        .then((res) => res.data) 
         .then((res) => alert(`${res}, l'exercice a bien été ajouté`))
         .catch((err) => alert(`erreur : ${err.response.data} `))
     }

@@ -13,6 +13,12 @@ body {
     background-color: $default-backgroud-color;
 }
 
+h2 {
+    margin: 25px 10%;
+    font-size: $title-font-size;
+    text-transform: uppercase;
+}
+
 .random-tabata {
     font-family: $default-font-family;
     text-align: center;
@@ -44,4 +50,36 @@ body {
     font-size: 2rem;
     color: $green-logo;
     font-weight: 100;
+}
+
+form {
+    width: 80%;
+    margin: 25px auto;
+    .label-input-container {
+        margin: 16px 0;
+        label {
+            font-size: $secondary-font-size;        }
+        input {
+            margin-top: 10px;
+            width: 90%;
+            height: 25px;
+        }
+        .form-error-message {
+            color: red;
+            font-size: 10px;
+        }
+        .password-format-condition {
+            font-size: $text-font-size;
+            font-style: italic;
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+    }
+        button {
+        width: 50%;
+        height: 32px;
+        background: $backgroud-blue;
+        color: $green-logo;
+        border-radius: 10px;
+        }
 }
