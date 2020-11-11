@@ -29,14 +29,13 @@ const AddExercice = () => {
 
     return (
         <div>
+            <h2 className="form-title">Ajouter un exercice</h2>
             <form className="add-exercice-form" onSubmit={handleSubmit}>
-                <h2 className="form-title">Ajouter un exercice</h2>
                 <div className="form-container">
+                    <label htmlFor="name">Nom de l'exercice</label><br/>
+                    <input className="form-input" type="text" id="name" name="name" placeholder="nouvel exercice" required onChange={handleChange}></input><br/>
 
-                    <label htmlFor="name">Nom de l'exercice</label><br />
-                    <input className="form-input" type="text" id="name" name="name" placeholder="nouvel exercice" required onChange={handleChange}></input><br />
-
-                    <label htmlFor="url_name">Lien YOUTUBE de l'exercice</label><br />
+                    <label htmlFor="url_name">Lien YOUTUBE de l'exercice</label><br/>
                     <input className="form-input" type="text" id="url_name" name="url_name" placeholder="lien youtube du nouveau exercice" onChange={handleChange}></input><br />
 
                     <input className="form-button-add" type="submit" value="Ajouter" />  
