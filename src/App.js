@@ -1,5 +1,6 @@
 import React from 'react';
 import AddExercice from './components/backoffice/AddExercice'
+import Authentification from './components/tabata/Authentification'
 import BurgerMenu from './components/BurgerMenu';
 import Countdown from './components/tabata/Countdown'
 import Footer from './components/Footer'
@@ -21,6 +22,7 @@ const App = () => {
           <Route exact path="/" component={TabataHome}/>
           <Route path="/countdown" component={Countdown} />
           <Route path="/registration" component={Registration}/>
+          <Route path="/auth/login" component={Authentification}/>
           <Route exact path="/back-office" component={Home} />
           <Route path="/back-office/new-exercice" component={AddExercice} />
           </Switch>
