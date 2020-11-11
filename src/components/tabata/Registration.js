@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useForm } from 'react-hook-form'
 import axios from 'axios'
 
@@ -9,21 +9,20 @@ function Registration() {
 
     const onSubmit = data => {
         axios.post('http://localhost:8080/api/register', data)
-        // .then(data)
         .then((res) => res.data)
         .then((res) => alert(`Félicitations, votre profil a bien étét enrengistré`))
         .catch((err) => alert(`erreur : ${err.response.data} `))
       }
       
-    const styles = {
-        container: {
-          width: "80%",
-          margin: "25px auto",
-        },
-        input: {
-          width: "100%",
-        },
-      };
+    // const styles = {
+    //     container: {
+    //       width: "80%",
+    //       margin: "25px auto",
+    //     },
+    //     input: {
+    //       width: "100%",
+    //     },
+    //   };
        
 
     return(
