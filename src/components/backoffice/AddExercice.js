@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+// import { useHistory } from 'react-router-dom'
 import axios from 'axios' 
 import '../../App.scss'
 import './AddExercice.css'
@@ -9,6 +10,9 @@ const AddExercice = () => {
         url_name: ''
     });
 
+    const token = localStorage.getItem('x-access-token')
+    // const history = useHistory()
+
     const handleChange = (e) => {
         setName({ ...name, [e.target.name]: e.target.value })
     }
@@ -17,10 +21,10 @@ const AddExercice = () => {
         const url = 'http://localhost:8080/api/exercices'
         e.preventDefault()
         axios
-        .post(url, name)
+        .post(url, name, {headers : {'Authorization' : `Bearer ${token}`}})
         .then((res) => res.data) 
         .then((res) => alert(`${res}, l'exercice a bien été ajouté`))
-        .catch((err) => alert(`erreur : ${err.response.data} `))
+        .catch((err) => alert(`erreur : vous n'êtes pas connectés `))
     }
 
     return (

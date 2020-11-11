@@ -1,49 +1,33 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import axios from 'axios'
 
-function Registration() {
+function Authentification() {
     const { register, handleSubmit, errors, formState } = useForm({
         mode: "onblur"
     })
 
-    const onSubmit = data => {
-        axios.post('http://localhost:8080/api/register', data)
-        .then((res) => res.data)
-        .then((res) => alert(`Félicitations, votre profil a bien étét enrengistré`))
-        .catch((err) => alert(`erreur : ${err.response.data} `))
+    const history = useHistory()
+
+    const onSubmit = data => { 
+        axios.post('http://localhost:8080/api/auth', data)
+        .then(res => res.headers['x-access-token'])
+        .then( data => { 
+          localStorage.clear()
+          localStorage.setItem('x-access-token', data)
+          history.push('/back-office/new-exercice')        
+        })
+        .then((res) => alert(`Vous êtes désormais connectés`))
+        .catch((err) => alert(`Identifiants incorrects`))
       }
-      
+
     return(
     <div>
-        <h2>Inscription</h2>
+        <h2>Se connecter</h2>
         <form onSubmit={handleSubmit(onSubmit)}>
             <div className="label-input-container">
-              <label >Prénom :</label><br></br>
-              <input 
-              name="prenom" 
-              ref={register({
-                  required: true,
-                  maxLength: 80
-              })} 
-              placeholder="Prénom"
-              /><br></br>
-              <span className="form-error-message">{errors.prenom && "Un prénom est requis"}</span>
-            </div>
-            <div className="label-input-container">
-              <label >Nom :</label><br></br>
-              <input 
-              name="nom" 
-              ref={register({
-                  required: true,
-                  maxLength: 80,
-              })}             
-              placeholder="Nom"
-              /><br></br>
-              <span className="form-error-message">{errors.nom && "Un nom est requis"}</span>
-            </div>
-            <div className="label-input-container">
-              <label >Votre adresse mail :</label><br></br>
+              <label >Connectez-vous avec votre adresse mail :</label><br></br>
               <input 
               name="email" 
               ref={register({
@@ -57,7 +41,6 @@ function Registration() {
             </div>
             <div className="label-input-container">
               <label >Votre mot de passe : </label>
-              <p className="password-format-condition">Au moins 6 caractères requis</p>
               <input 
               name="password" 
               ref={register({
@@ -81,4 +64,4 @@ function Registration() {
     )
 }
 
-export default Registration
+export default Authentification
