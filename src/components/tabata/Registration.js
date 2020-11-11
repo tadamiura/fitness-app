@@ -14,17 +14,6 @@ function Registration() {
         .catch((err) => alert(`erreur : ${err.response.data} `))
       }
       
-    // const styles = {
-    //     container: {
-    //       width: "80%",
-    //       margin: "25px auto",
-    //     },
-    //     input: {
-    //       width: "100%",
-    //     },
-    //   };
-       
-
     return(
     <div>
         <h2>Inscription</h2>
