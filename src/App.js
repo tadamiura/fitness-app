@@ -1,7 +1,6 @@
 import React from 'react';
 import AddExercice from './components/backoffice/AddExercice'
 import Authentification from './components/tabata/Authentification'
-import BurgerMenu from './components/BurgerMenu';
 import Countdown from './components/tabata/Countdown'
 import Footer from './components/Footer'
 import Header from './components/Header'
@@ -16,7 +15,6 @@ const App = () => {
   
     return (
       <div className="App">
-        <BurgerMenu />
         <Header />
           <Switch>
           <Route exact path="/" component={TabataHome}/>

@@ -56,10 +56,12 @@ li{
     margin : 5px
 }
 
-a {
-    color :white;
-}
-
 .container-links {
     text-align: center;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+

@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-// import { useHistory } from 'react-router-dom'
 import axios from 'axios' 
 import '../../App.scss'
 import './AddExercice.css'
@@ -11,7 +10,6 @@ const AddExercice = () => {
     });
 
     const token = localStorage.getItem('x-access-token')
-    // const history = useHistory()
 
     const handleChange = (e) => {
         setName({ ...name, [e.target.name]: e.target.value })

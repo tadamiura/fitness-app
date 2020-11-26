@@ -1,7 +1,7 @@
 import React from 'react'
-import instagram from '../instagram-brands.svg'
-import github from '../../src/github-brands.svg'
-import linkedin from '../../src/linkedin-brands.svg'
+import instagram from '../img/instagram-brands.svg'
+import github from '../img/github-brands.svg'
+import linkedin from '../img/linkedin-brands.svg'
 
 import './Footer.css'
 
@@ -12,7 +12,6 @@ const Footer = () => {
             <footer className="about-me">
                     <h3 className="about-me">About me</h3>
                     <p className="description">Tadatoshi Miura, french strenght and conditioning coach (handball, football, kick-boxing...), fitness coach and web developper</p>
-            {/* </footer> */}
             <span className="links-footer">
                 <ul>
                     <li> About tabata training</li>

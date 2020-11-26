@@ -40,7 +40,7 @@ function Authentification() {
               <span className="form-error-message">{errors.email && "Un email valide est requis"}</span>
             </div>
             <div className="label-input-container">
-              <label >Votre mot de passe : </label>
+              <label >Votre mot de passe : </label><br></br>
               <input 
               name="password" 
               ref={register({

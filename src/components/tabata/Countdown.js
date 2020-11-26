@@ -1,7 +1,6 @@
 import React from 'react'
 import SetCountdown from './SetCountdown'
 import { Link } from 'react-router-dom'
-// import DisplayExercice from './DisplayExercice'
 import './Countdown.css'
 
 class Countdown extends React.Component {
