@@ -1,4 +1,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+Actually, this project is on progress.
+First version was only a front-end app :
+https://vibrant-spence-54f21b.netlify.app/
+
+Yet, I build an API and a front-end to manage exercices : fitness coaches will be able to add exercices for each customer.
+
+## To launch the repository
+First, make sure you already connect Wicked Workout's API : 
+https://github.com/tadamiura/WickedWorkout-API-v1
+
+Then, use dev branch : 
+
+$ npm install
+$ npm start
 
 ## Available Scripts
 
