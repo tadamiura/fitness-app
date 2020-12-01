@@ -4,6 +4,7 @@ import Authentification from './components/tabata/Authentification'
 import AboutMe from './components/AboutMe'
 import AboutTabata from './components/AboutTabata'
 import Countdown from './components/tabata/Countdown'
+import Dashboard from './components/Dashboard'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Home from './components/backoffice/Home'
@@ -19,7 +20,8 @@ const App = () => {
       <div className="App">
         <Header />
           <Switch>
-          <Route exact path="/" component={TabataHome}/>
+          <Route exact path="/" component={Dashboard}/>
+          <Route path="/tabata-home" component={TabataHome}/>
           <Route path="/countdown" component={Countdown} />
           <Route path="/about-me" component={AboutMe} />
           <Route path="/about-tabata" component={AboutTabata} />

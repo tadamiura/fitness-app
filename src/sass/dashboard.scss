@@ -1,0 +1,34 @@
+@import '_variables';
+
+.dashboard {
+    h2 {
+        font-size: $title-font-size;
+        text-align: center;
+    }
+    .dashboard-menu {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 150px);
+        grid-auto-rows: 150px;
+        gap: 15px;
+        justify-content: center;
+        text-align: center;
+        margin: 25px;
+        .cards {
+            border: 1px solid rgba(240, 240, 240, 0.972);
+            border-radius: 30px;
+            box-shadow: 1px 2px 1px 1px rgb(218, 218, 218);
+            padding: 10px;
+            a {
+                text-decoration: none;
+                color: $green-logo;
+                img {
+                    width: 80px;
+                }
+                p {
+                    font-size: small;
+                    margin: 5px
+                }
+            }
+        }
+    }
+}
