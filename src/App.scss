@@ -8,9 +8,38 @@
 
 @import './sass/variables';
 @import './sass/buttons.scss';
+@import './sass/footer.scss';
+@import './sass/about.scss';
+@import './sass/dashboard.scss';
 
+
+html {
+    height: 100%;
+}
 body {
-    background-color: $default-backgroud-color;
+    width: 100%;
+}
+
+.header {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 16px;
+    color: #00ea92;
+    text-align: center;
+    background: $backgroud-blue;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.header h1 {
+    margin : 0;
+    padding-top: 20px ;
+}
+
+.ww-logo{
+    width: 70px;
+    height: 70px;
 }
 
 h2 {
@@ -83,3 +112,5 @@ form {
     border-radius: 10px;
     }
 }
+
+
