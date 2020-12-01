@@ -26,9 +26,9 @@ const Footer = () => {
                 </h3>
                 <h4 key='mail'><a href={`mailto:tadamiura@gmail.com`}>N'hésitez pas à me contacter <span className="email">tadamiura@gmail.com</span></a></h4>
                 <span className='logo-container'>
-                    <h4 key='likedin'><a href="" target='blank'><FontAwesomeIcon icon={faLinkedin} size="2x" /></a></h4>
-                    <h4 key='github'><a href="" target='blank'><FontAwesomeIcon icon={faGithub} size="2x" /></a></h4>
-                    <h4 key='instagram'><a href="" target='blank'><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
+                    <h4 key='likedin'><a href="https://www.linkedin.com/in/tadatoshimiura/" target='blank'><FontAwesomeIcon icon={faLinkedin} size="2x" /></a></h4>
+                    <h4 key='github'><a href="https://github.com/tadamiura" target='blank'><FontAwesomeIcon icon={faGithub} size="2x" /></a></h4>
+                    <h4 key='instagram'><a href="https://www.instagram.com/tadmildura/" target='blank'><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
                     </h4>
                 </span>
             </footer>
