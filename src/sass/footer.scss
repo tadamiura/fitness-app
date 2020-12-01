@@ -1,0 +1,19 @@
+@import '_variables';
+
+footer  {
+    background: $backgroud-blue;
+    color: $green-logo;
+    text-align: center;
+    padding: 7px 15px;
+  
+    a {
+        text-decoration: none;
+        color: $green-logo
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+}

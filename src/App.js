@@ -1,6 +1,8 @@
 import React from 'react';
 import AddExercice from './components/backoffice/AddExercice'
 import Authentification from './components/tabata/Authentification'
+import AboutMe from './components/AboutMe'
+import AboutTabata from './components/AboutTabata'
 import Countdown from './components/tabata/Countdown'
 import Footer from './components/Footer'
 import Header from './components/Header'
@@ -19,6 +21,8 @@ const App = () => {
           <Switch>
           <Route exact path="/" component={TabataHome}/>
           <Route path="/countdown" component={Countdown} />
+          <Route path="/about-me" component={AboutMe} />
+          <Route path="/about-tabata" component={AboutTabata} />
           <Route path="/registration" component={Registration}/>
           <Route path="/auth/login" component={Authentification}/>
           <Route exact path="/back-office" component={Home} />

@@ -1,17 +1,41 @@
 import React from 'react'
-import instagram from '../img/instagram-brands.svg'
-import github from '../img/github-brands.svg'
-import linkedin from '../img/linkedin-brands.svg'
-
-import './Footer.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { 
+    faGithub,
+    faInstagram,
+    faLinkedin 
+} from "@fortawesome/free-brands-svg-icons"
+import { Link } from 'react-router-dom'
 
 
 const Footer = () => {
     return (
         <div className="footer">
-            <footer className="about-me">
-                    <h3 className="about-me">About me</h3>
-                    <p className="description">Tadatoshi Miura, french strenght and conditioning coach (handball, football, kick-boxing...), fitness coach and web developper</p>
+            <footer className="footer">
+                <h3>
+                    <Link to='about-me'
+                        className='link-about-me'>
+                        A propos de moi
+                    </Link>
+                </h3>
+                <h3>
+                    <Link to='about-tabata'
+                    className='link-about-tabata'>
+                        A propos de la méthode Tabata
+                    </Link>
+                </h3>
+                <h3>
+                    <h4 key='mail'><a href={`mailto:tadamiura@gmail.com`}>N'hésitez pas à me contacter <span className="email">tadamiura@gmail.com</span></a></h4>
+                    <span className='logo-container'>
+                        <h4 key='likedin'><a href="" target='blank'><FontAwesomeIcon icon={faLinkedin} size="2x" /></a></h4>
+                        <h4 key='github'><a href="" target='blank'><FontAwesomeIcon icon={faGithub} size="2x" /></a></h4>
+                        <h4 key='instagram'><a href="" target='blank'><FontAwesomeIcon icon={faInstagram} size="2x" /></a></h4>
+                    </span>
+                </h3>
+                {/* <Link to='about-me'
+                className='link-about-me'>
+                ABOUT ME
+                </Link>
             <span className="links-footer">
                 <ul>
                     <li> About tabata training</li>
@@ -35,7 +59,7 @@ const Footer = () => {
                         <p><a href="https://github.com/tadamiura"><img src={github} alt="linkedin"></img></a></p>
                     </div>
                 </ul>
-                </span>
+                </span> */}
             </footer>
         </div>
     )

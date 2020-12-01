@@ -8,9 +8,14 @@
 
 @import './sass/variables';
 @import './sass/buttons.scss';
+@import './sass/footer.scss';
+@import './sass/about-me.scss';
 
+html {
+    height: 100%;
+}
 body {
-    background-color: $default-backgroud-color;
+    width: 100%;
 }
 
 .header {
@@ -18,7 +23,7 @@ body {
     font-size: 16px;
     color: #00ea92;
     text-align: center;
-    background: linear-gradient(#2e437e, #406bdf);
+    background: $backgroud-blue;
     margin: 0;
     padding: 10px;
     display: flex;
@@ -105,3 +110,5 @@ form {
     border-radius: 10px;
     }
 }
+
+
