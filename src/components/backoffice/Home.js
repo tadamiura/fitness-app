@@ -10,7 +10,7 @@ const Home = () => {
     const history = useHistory()
     
     const getExercice = () => {
-        const url = 'http://localhost:8080/api/exercices/back-office'
+        const url = '/api/exercices/back-office'
         axios.get(url, {headers : {'Authorization' : `Bearer ${token}`}})
         .then((res) => setExercice(res.data))
         .catch(error => history.push('/auth/login'))

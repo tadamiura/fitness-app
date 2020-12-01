@@ -16,7 +16,7 @@ const AddExercice = () => {
     }
 
     const handleSubmit = (e) => {
-        const url = 'http://localhost:8080/api/exercices'
+        const url = '/api/exercices'
         e.preventDefault()
         axios
         .post(url, name, {headers : {'Authorization' : `Bearer ${token}`}})

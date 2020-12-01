@@ -11,7 +11,7 @@ function Authentification() {
     const history = useHistory()
 
     const onSubmit = data => { 
-        axios.post('http://localhost:8080/api/auth', data)
+        axios.post('/api/auth', data)
         .then(res => res.headers['x-access-token'])
         .then( data => { 
           localStorage.clear()

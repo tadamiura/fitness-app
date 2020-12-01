@@ -4,6 +4,9 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom'
+import axios from 'axios';
+
+axios.defaults.baseURL = process.env.REACT_APP_SERVER_URL
 
 
 ReactDOM.render(

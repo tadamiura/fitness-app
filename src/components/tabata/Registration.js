@@ -8,7 +8,7 @@ function Registration() {
     })
 
     const onSubmit = data => {
-        axios.post('http://localhost:8080/api/register', data)
+        axios.post('/api/register', data)
         .then((res) => res.data)
         .then((res) => alert(`Félicitations, votre profil a bien étét enrengistré`))
         .catch((err) => alert(`erreur : ${err.response.data} `))
