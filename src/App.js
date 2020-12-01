@@ -21,7 +21,7 @@ const App = () => {
           <Route path="/countdown" component={Countdown} />
           <Route path="/registration" component={Registration}/>
           <Route path="/auth/login" component={Authentification}/>
-          {/* <Route exact path="/back-office" component={Home} /> */}
+          <Route exact path="/back-office" component={Home} />
           <Route path="/back-office/new-exercice" component={AddExercice} />
           </Switch>
         <Footer />

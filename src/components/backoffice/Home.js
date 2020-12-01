@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useHistory } from 'react-router-dom'
 
@@ -16,7 +16,7 @@ const Home = () => {
         .catch(error => history.push('/auth/login'))
     }
 
-    useEffect(() => getExercice(), [])
+    useEffect(() => getExercice())
 
     return exercice === null ?
     <div>Loading ...</div>
