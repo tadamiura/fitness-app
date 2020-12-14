@@ -1,0 +1,19 @@
+@import '_variables';
+
+.display-exercices {
+    text-align: center;
+    margin: 10px;
+    .random-exercice {
+        margin-bottom: 10px;
+        .exercice {
+            font-family: $secondary-font-family;    
+            font-size: 2rem;
+            color: $green-logo;
+            font-weight: 100;
+        }
+    }
+    .start-tabata-button {
+        margin: 10px 0;
+        @extend .default-button;
+    }
+}

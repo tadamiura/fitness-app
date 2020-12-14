@@ -1,0 +1,46 @@
+.container-countdown {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0 4em 0;
+    height: 500px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 3em;
+    .counter-info{
+        margin: 0 20px 0 20px;
+        h3 {
+            margin: auto;
+            font-size: large;
+
+        }
+
+        h4 {
+            font-size: large;
+            margin-top: 0;
+        }
+        .congrats-message {
+            font-family: 'Cabin', sans-serif;
+            font-style: italic;
+            font-size: xx-large;
+        }
+        .secondes{
+            font-family: 'Pacifico', cursive;
+            font-size: 1.5em;
+            font-weight: bolder;
+            background: -webkit-linear-gradient(#002381, #406bdf);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+            margin: auto;
+            -webkit-text-stroke: 2px black; /* width and color */
+        }
+        .container-advices h4{
+            margin-bottom: 2em;
+            font-family: 'Cabin', sans-serif;
+            font-size: x-large;
+        }
+    }
+}
+
+
+
