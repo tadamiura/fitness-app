@@ -1,6 +1,7 @@
 import React from 'react'
 import SetCountdown from './SetCountdown'
 import { Link } from 'react-router-dom'
+import TotalCountdown from './TotalCountdown'
 
 class Countdown extends React.Component {
     state = {
@@ -48,20 +49,21 @@ class Countdown extends React.Component {
         return (
             <div className="container-countdown">
                 {<div className="counter-info">
-                    <h4>Temsp restant : </h4>
+                    <h4>Temps restant : </h4>
                     {sets === 0 ?
                         <p className="congrats-message">
                             {`Congrats this HIIT is over.
-                             After each training, you must be pround of you !`}
-                             <SetCountdown />
+                            After each training, you must be pround of you !`}
+                            <SetCountdown />
                         </p>
-                        :
+                        :   
+                            <div>
                             <p className="secondes">
                                 {`${seconds}`}
                             </p>
+                            <TotalCountdown />
+                            </div>
                     }
-                    {/* NB DE SERIES A FAIRE */}
-                    <h4>{sets === !0 && `${sets} sets left`}</h4>
                     <div className="container-advices">
                         {
                         sets === 1 || sets === 5 || sets === 9 || sets === 13 
@@ -83,12 +85,13 @@ class Countdown extends React.Component {
                         ""
                         }
                     </div>
+                    <h4>{sets%2 === 1 ? `${(sets +1) /2} série(s) restante(s)` : `${(sets) /2} série(s) restante(s)`}</h4>
                 </div>}
                 <div className="container-button">
                     <Link to='/tabata/home' >
                         <input type="button"
                         className="back-button"
-                        value={sets === 0 ? `get a new tabata training now` : `Back` }
+                        value={sets === 0 ? `get a new tabata training now` : `Retour` }
                         />
                     </Link>
                 </div>
