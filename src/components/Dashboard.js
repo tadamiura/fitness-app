@@ -20,7 +20,7 @@ const Dashboard = () => {
                     </Link>
                 </span>
                 <span className='cards'>
-                    <Link to='countdown'>
+                    <Link to=''>
                     <img src={countdown} alt="countdown"></img>
                     <p>COUNTDOWN</p>
                     </Link>
