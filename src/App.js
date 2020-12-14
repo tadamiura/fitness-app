@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 import Header from './components/Header'
 import Home from './components/backoffice/Home'
 import TabataHome from './components/tabata/TabataHome'
+import TabataWorkout from './components/tabata/Workout'
 import Registration from './components/tabata/Registration'
 import { Switch, Route } from 'react-router-dom'
 
@@ -21,8 +22,9 @@ const App = () => {
         <Header />
           <Switch>
           <Route exact path="/" component={Dashboard}/>
-          <Route path="/tabata-home" component={TabataHome}/>
-          <Route path="/countdown" component={Countdown} />
+          <Route path="/tabata/home" component={TabataHome}/>
+          <Route path="/tabata/workout" component={TabataWorkout}/>
+          <Route path="/tabata/countdown" component={Countdown} />
           <Route path="/about-me" component={AboutMe} />
           <Route path="/about-tabata" component={AboutTabata} />
           <Route path="/registration" component={Registration}/>
