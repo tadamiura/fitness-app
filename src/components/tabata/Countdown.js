@@ -66,19 +66,19 @@ class Countdown extends React.Component {
                         {
                         sets === 1 || sets === 5 || sets === 9 || sets === 13 
                         ?
-                        <h4>Go !<br></br> Effectuez un maximum de répétitions de l'exercice :<br></br> <span className="random-exercice">{this.props.location.state.ex1.name}</span></h4> 
+                        <h4>Go !<br></br> Effectuez un maximum de répétitions de l'exercice :<br></br> <span className="random-exercice">{this.props.location.state.ex2.name}</span></h4> 
                         : 
                         sets === 3 || sets === 7 || sets === 11 || sets === 15 
                         ?
-                        <h4>Go !<br></br> Effectuez un maximum de répétitions de l'exercice :<br></br> <span className="random-exercice">{this.props.location.state.ex2.name}</span></h4> 
+                        <h4>Go !<br></br> Effectuez un maximum de répétitions de l'exercice :<br></br> <span className="random-exercice">{this.props.location.state.ex1.name}</span></h4> 
                         :
                         sets === 2 || sets === 6 || sets === 10 || sets === 14 
                         ?
-                        <h4>Récupération !<br></br> Respirez, reprenez le contrôle de votre rythme cardiaque. Prochain exercice :<br></br> <span className="random-exercice">{this.props.location.state.ex1.name}</span></h4>
+                        <h4>Récupération !<br></br> Respirez, reprenez le contrôle de votre rythme cardiaque. Prochain exercice :<br></br> <span className="random-exercice">{this.props.location.state.ex2.name}</span></h4>
                         :
                         sets === 4 || sets === 8 || sets === 12 || sets === 16 
                         ?
-                        <h4>Récupération !<br></br> Respirez, reprenez le contrôle de votre rythme cardiaque. Prochain exercice :<br></br> <span className="random-exercice">{this.props.location.state.ex2.name}</span></h4>
+                        <h4>Récupération !<br></br> Respirez, reprenez le contrôle de votre rythme cardiaque. Prochain exercice :<br></br> <span className="random-exercice">{this.props.location.state.ex1.name}</span></h4>
                         :
                         ""
                         }
