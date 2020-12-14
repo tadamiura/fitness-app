@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom'
 import axios from 'axios';
+import ScrollToTop from './components/ScrollToTop';
 
 axios.defaults.baseURL = process.env.REACT_APP_SERVER_URL
 
@@ -12,6 +13,7 @@ axios.defaults.baseURL = process.env.REACT_APP_SERVER_URL
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <App />
     </BrowserRouter>
   </React.StrictMode>,
