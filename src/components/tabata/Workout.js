@@ -3,7 +3,7 @@ import DisplayExercice from './DisplayExercice'
 import axios from 'axios'
 
 const Workout = () => {
-
+    // eslint-disable-next-line 
     const [exercices, setExercice] = useState({
         ex1: null,
         ex2: null

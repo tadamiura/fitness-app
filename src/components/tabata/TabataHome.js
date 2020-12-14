@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import Countdown from './Countdown'
-import RandomExercice from './RandomExercice'
 import { Link } from 'react-router-dom'
 import './TabataHome.css'
 
