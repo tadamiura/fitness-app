@@ -12,7 +12,9 @@ const DisplayExercice = ({ ex1, ex2 }) =>{
 
 return( ex1 === null || ex2 === null
         ?
-        <Loader />
+        <div className='loader-component'>
+            <Loader />
+        </div>
         : 
         <div className='display-exercices'>
             <div className='random-exercice' id={ex1.id}> 

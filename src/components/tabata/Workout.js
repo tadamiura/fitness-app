@@ -26,11 +26,13 @@ const Workout = () => {
         )
     }
 
-    // useEffect(() => getExercices(), [])
+    useEffect(() => getExercices(), [])
 
      return ex1 === null || ex2 === null 
         ?
-        <Loader />
+        <div className='loader-component'>
+            <Loader />
+        </div>
         :(
             <div className='display-exercice'>
                 <DisplayExercice ex1={ex1} ex2={ex2} />
