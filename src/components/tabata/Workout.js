@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import DisplayExercice from './DisplayExercice'
 import axios from 'axios'
+import DisplayExercice from './DisplayExercice'
+import Loader from '../Loader'
 
 const Workout = () => {
     // eslint-disable-next-line 
@@ -29,9 +30,11 @@ const Workout = () => {
 
      return ex1 === null || ex2 === null 
         ?
-        <div className='display-exercice'>Loading ...</div>
+        <div className='loader-component'>
+            <Loader />
+        </div>
         :(
-            <div>
+            <div className='display-exercice'>
                 <DisplayExercice ex1={ex1} ex2={ex2} />
             </div>
         )

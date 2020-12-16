@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import ReactPlayer from 'react-player'
 import Directions from './Directions'
+import Loader from '../Loader'
 import '../../App.scss'
 
 const DisplayExercice = ({ ex1, ex2 }) =>{
@@ -11,7 +12,9 @@ const DisplayExercice = ({ ex1, ex2 }) =>{
 
 return( ex1 === null || ex2 === null
         ?
-        <div>Loading ...</div> 
+        <div className='loader-component'>
+            <Loader />
+        </div>
         : 
         <div className='display-exercices'>
             <div className='random-exercice' id={ex1.id}> 

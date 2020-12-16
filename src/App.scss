@@ -13,6 +13,7 @@
 @import './sass/dashboard.scss';
 @import './sass/display-exercices.scss';
 @import './sass/footer.scss';
+@import './sass/loader.scss';
 
 
 
@@ -26,7 +27,7 @@ body {
 .header {
     font-family: 'Kaushan Script', cursive;
     font-size: 16px;
-    color: #00ea92;
+    color: $green-logo;
     text-align: center;
     background: $backgroud-blue;
     margin: 0;
