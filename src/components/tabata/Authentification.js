@@ -16,7 +16,7 @@ function Authentification() {
         .then( data => { 
           localStorage.clear()
           localStorage.setItem('x-access-token', data)
-          history.push('/back-office/new-exercice')        
+          history.push('/back-office/exercices')        
         })
         .then((res) => alert(`Vous êtes désormais connectés`))
         .catch((err) => alert(`Identifiants incorrects`))
