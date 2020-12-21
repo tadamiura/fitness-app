@@ -27,7 +27,7 @@ const List = () => {
             <div className="exercices-list-name">
                 {exercice.map(info => 
                     <Link key={info.id} 
-                    to={`/back-office/exercices/${info.id}`} 
+                    to={`/back-office/exercice/${info.id}`} 
                     className='exercice-link'
                     >
                         <p className="exercice-name" id={info.id}>{info.name}</p>  
