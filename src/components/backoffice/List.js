@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
+import { useHistory, Link } from 'react-router-dom'
+import Loader from '../Loader'
 import axios from 'axios'
-import { useHistory } from 'react-router-dom'
-
-import './List.css'
 
 const List = () => {
     const [exercice, setExercice] = useState(null)
@@ -19,15 +18,22 @@ const List = () => {
     useEffect(() => getExercice())
 
     return exercice === null ?
-    <div>Loading ...</div>
+    <div className='loader-component'>
+        <Loader />
+    </div>
     : (
         <div className="exercices-list">
-            <h3 className="exercices-list-title">Liste actuelle des exercices</h3>
-            <ul className="exercices-list-name">
+            <h2 className="exercices-list-title">Liste actuelle des exercices</h2>
+            <div className="exercices-list-name">
                 {exercice.map(info => 
-                <li className="exercice-name" id={info.id}>{info.id} : {info.name}</li>
+                    <Link key={info.id} 
+                    to={`/back-office/exercices/${info.id}`} 
+                    className='exercice-link'
+                    >
+                        <p className="exercice-name" id={info.id}>{info.name}</p>  
+                    </Link>
                 )}
-            </ul>
+            </div>
         </div>
     )
 }
