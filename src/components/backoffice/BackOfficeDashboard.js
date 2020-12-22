@@ -18,13 +18,13 @@ const BackOfficeDashboard = () => {
                     </Link>
                 </span>
                 <span className='cards'>
-                    <Link to=''>
+                    <Link to='/back-office'>
                     <img src={users} alt="users"></img>
                     <p>MES PRATIQUANTS</p>
                     </Link>
                 </span>
                 <span className='cards'>
-                    <Link to=''>
+                    <Link to='/back-office'>
                     <img src={profil} alt="my profil"></img>
                     <p>MON PROFIL</p>
                     </Link>
