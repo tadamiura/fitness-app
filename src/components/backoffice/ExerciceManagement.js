@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Loader from '../Loader'
+import ReactPlayer from 'react-player'
+
 import axios from 'axios'
 
 const ExerciceManagement = (props) => {
@@ -16,8 +18,16 @@ const ExerciceManagement = (props) => {
     return(exercice === null ?
         <Loader />
         :
-        <div>
-            {exercice.name}
+        <div className="component exercice-management">
+            <span className="exercice">{exercice.name}</span>
+            <ReactPlayer 
+                url={exercice.url_name} 
+                controls={true}
+                height={180}
+                width={300}
+                style={{
+                margin: 'auto'
+            }}/>
         </div>
     )
 }
