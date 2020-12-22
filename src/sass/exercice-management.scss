@@ -1,0 +1,5 @@
+.exercice-management{
+    @extend .dashboard;
+    @extend .random-exercice;
+    text-align: center;
+}
