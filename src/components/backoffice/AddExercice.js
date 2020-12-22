@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import axios from 'axios' 
-import '../../App.scss'
-import './AddExercice.css'
 
 const AddExercice = () => {
     const [name, setName] = useState({
@@ -26,8 +24,8 @@ const AddExercice = () => {
     }
 
     return (
-        <div>
-            <h2 className="form-title">Ajouter un exercice</h2>
+        <div className="component form-add-exercice">
+            <h1 className="form-title">Ajouter un exercice</h1>
             <form className="add-exercice-form" onSubmit={handleSubmit}>
                 <div className="form-container">
                     <label htmlFor="name">Nom de l'exercice</label><br/>

@@ -16,7 +16,7 @@ return( ex1 === null || ex2 === null
             <Loader />
         </div>
         : 
-        <div className='display-exercices'>
+        <div className='display-exercices component'>
             <div className='random-exercice' id={ex1.id}> 
                 <span className="exercice">{ex1.name}</span>
                 <ReactPlayer 

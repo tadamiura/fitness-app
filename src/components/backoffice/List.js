@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useHistory, Link } from 'react-router-dom'
 import { FontAwesomeIcon,  } from "@fortawesome/react-fontawesome"
-import { faEdit, faPlus, faPlusCircle } from '@fortawesome/free-solid-svg-icons'
+import { faEdit, faPlus } from '@fortawesome/free-solid-svg-icons'
 import Loader from '../Loader'
 import axios from 'axios'
 
@@ -16,7 +16,7 @@ const List = () => {
         .then((res) => setExercice(res.data))
         .catch(error => history.push('/auth/login'))
     }
-
+    // eslint-disable-next-line
     useEffect(() => getExercice(), [])
 
     return exercice === null ?
