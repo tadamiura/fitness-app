@@ -15,7 +15,7 @@ const List = () => {
         .catch(error => history.push('/auth/login'))
     }
 
-    useEffect(() => getExercice())
+    useEffect(() => getExercice(), [])
 
     return exercice === null ?
     <div className='loader-component'>
