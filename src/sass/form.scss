@@ -1,3 +1,5 @@
+@import '_variables';
+
 .form-button-add {
     margin: 0 0 20px 0;
     display: inline-block;
@@ -18,4 +20,17 @@
     margin: 7px 0 15px 0;
     width: 280px;
     height: 25px;
+}
+
+.form-add-exercice{
+    margin: 30px 10px;
+    .add-exercice-form{
+        width: 100%;
+        label{
+            font-size: 22px;
+        }
+        input{
+            font-size: $secondary-font-size;
+        }
+    }
 }
