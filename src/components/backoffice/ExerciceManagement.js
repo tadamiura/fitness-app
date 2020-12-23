@@ -52,7 +52,7 @@ const ExerciceManagement = (props) => {
                     url={exercice.url_name} 
                     controls={true}
                     height={180}
-                    width={300}
+                    width={240}
                     style={{
                     margin: 'auto'
                 }}/>
@@ -85,14 +85,15 @@ const ExerciceManagement = (props) => {
                 className="update-button"
                 />
             </form>
-
-            <button className="delete-button" onClick={deleteExercice}>Supprimer l'exercice</button>
-            <Link 
-            to={`/back-office/exercices`}
-            className='default-button'
-            >
-            Retour à la liste
-            </Link>
+            <div className='delete-back-button-container'>
+                <button className="delete-button" onClick={deleteExercice}>Supprimer l'exercice</button>
+                <Link 
+                to={`/back-office/exercices`}
+                className='default-button'
+                >
+                Retour à la liste
+                </Link>
+            </div>
         </div>
     )
 }
