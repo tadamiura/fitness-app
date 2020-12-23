@@ -8,11 +8,14 @@
 
 @import './sass/variables';
 @import './sass/about.scss';
+@import './sass/backoffice-list.scss';
 @import './sass/buttons.scss';
 @import './sass/countdown.scss';
 @import './sass/dashboard.scss';
 @import './sass/display-exercices.scss';
+@import './sass/exercice-management.scss';
 @import './sass/footer.scss';
+@import './sass/form.scss';
 @import './sass/loader.scss';
 
 
@@ -22,6 +25,10 @@ html {
 }
 body {
     width: 100%;
+}
+
+.component{
+    min-height: 100vh;
 }
 
 .header {

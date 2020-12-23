@@ -14,3 +14,33 @@
     background: linear-gradient(135deg, #2e437e, #406bdf);
     border-radius: 40px;
 }
+
+.update-button {
+    display: inline-block;
+    position: relative;
+    font-family: $secondary-font-family;    
+    font-size: 16px;
+    padding: 0.5em 0.8em;
+    text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+	color: #002381;
+    background: transparent;
+    border-radius: 40px;
+}
+
+.delete-button{
+    display: inline-block;
+    position: relative;
+    font-family: $secondary-font-family;    
+    font-size: large;
+    padding: 0.5em 0.8em;
+    text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+	color: red;
+    background: transparent;
+    border-radius: 40px;
+}
