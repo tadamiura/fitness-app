@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useHistory } from 'react-router-dom'
+import { useHistory, Link } from 'react-router-dom'
 import Loader from '../Loader'
 import ReactPlayer from 'react-player'
 
@@ -8,21 +8,22 @@ import axios from 'axios'
 const ExerciceManagement = (props) => {
 
     const [exercice, setExercice] = useState(null)
-
+    const url = `/api/exercices/${props.match.params.id}`
     const getExercice = () => {
-        axios.get(`/api/exercices/${props.match.params.id}`)
+        axios.get(url)
         .then((res) => setExercice(res.data))
     }
 
     const handleChange = (e) => {
-        // const { name, value } = e.target
         setExercice({ ...exercice, [e.target.name]: e.target.value })
     }
+
+    const token = localStorage.getItem('x-access-token')
 
     const handleSubmit = (e) => {
         e.preventDefault()
         axios
-            .put(`/api/exercices/${props.match.params.id}`, exercice)
+            .put(url, exercice, {headers : {'Authorization' : `Bearer ${token}`}})
             .then((res) => res.data)
             .then((res) => alert(`${res}, l'exercice a bien été modifié`))
             .catch((err) => alert(`erreur : ${err.response.data} `))
@@ -31,10 +32,11 @@ const ExerciceManagement = (props) => {
     const history = useHistory()
 
     const deleteExercice = () =>{
-        axios.delete(`/api/exercices/${props.match.params.id}`)
+        axios.delete(url, {headers : {'Authorization' : `Bearer ${token}`}})
         .then (history.push('/back-office/exercices'))
-        .then((res) =>alert(`L'exercice a bien été supprimé de la liste`)         
-        )}
+        .then((res) =>alert(`L'exercice a bien été supprimé de la liste`))
+        .catch((err) => alert(`erreur ; ${err.response.data}`))
+    }
 
     // eslint-disable-next-line
     useEffect(() => getExercice(), [])
@@ -44,17 +46,20 @@ const ExerciceManagement = (props) => {
         :
         <div className="component exercice-management">
             <h1>Visuel de l'exercice</h1>
-            <span className="exercice">{exercice.name}</span>
-            <ReactPlayer 
-                url={exercice.url_name} 
-                controls={true}
-                height={180}
-                width={300}
-                style={{
-                margin: 'auto'
-            }}/>
+            <div className="exercice-preview">
+                <span className="exercice">{exercice.name}</span>
+                <ReactPlayer 
+                    url={exercice.url_name} 
+                    controls={true}
+                    height={180}
+                    width={300}
+                    style={{
+                    margin: 'auto'
+                }}/>
+            </div>
 
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}
+            className="update-exercice">
                 <h1>Modifier l'exercice</h1>
                 <div>
                     <label htmlFor='name'>Nom de l'exercice</label><br></br>
@@ -76,12 +81,18 @@ const ExerciceManagement = (props) => {
                     onChange={handleChange}
                     />
                 </div>
-                <input type='submit' value='Valider'
-                className="default-button"
+                <input type='submit' value='Mettre à jour'
+                className="update-button"
                 />
             </form>
 
-            <button className="default-button" onClick={deleteExercice}>Supprimer l'exercice</button>
+            <button className="delete-button" onClick={deleteExercice}>Supprimer l'exercice</button>
+            <Link 
+            to={`/back-office/exercices`}
+            className='default-button'
+            >
+            Retour à la liste
+            </Link>
         </div>
     )
 }
