@@ -52,7 +52,7 @@ const ExerciceManagement = (props) => {
                     url={exercice.url_name} 
                     controls={true}
                     height={180}
-                    width={240}
+                    width={270}
                     style={{
                     margin: 'auto'
                 }}/>
