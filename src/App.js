@@ -1,6 +1,5 @@
 import React from 'react';
 import AboutMe from './components/AboutMe'
-import AddExercice from './components/backoffice/AddExercice'
 import Authentification from './components/tabata/Authentification'
 import AboutTabata from './components/AboutTabata'
 import BackOfficeDashboard from './components/backoffice/BackOfficeDashboard';
@@ -10,6 +9,7 @@ import ExerciceManagement from './components/backoffice/ExerciceManagement'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import List from './components/backoffice/List'
+import NewExercice from './components/backoffice/NewExercice'
 import TabataHome from './components/tabata/TabataHome'
 import TabataWorkout from './components/tabata/Workout'
 import Registration from './components/tabata/Registration'
@@ -34,7 +34,8 @@ const App = () => {
           <Route exact path="/back-office" component={BackOfficeDashboard} />
           <Route path="/back-office/exercices" component={List} />
           <Route path="/back-office/exercice/:id" render={(props) => <ExerciceManagement {...props} />}/>
-          <Route path="/back-office/new-exercice" component={AddExercice} />
+          {/* <Route path="/back-office/new-exercice" component={AddExercice} /> */}
+          <Route path="/back-office/new-exercice" component={NewExercice} />
           </Switch>
         <Footer />
         </div>
