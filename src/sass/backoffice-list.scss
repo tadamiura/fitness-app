@@ -20,6 +20,9 @@
                 font-size: 2rem;
                 color: $green-logo;
                 font-weight: 100;
+                &:hover{
+                    background: #002381;
+                }
             }
     }
 }
