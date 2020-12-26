@@ -1,5 +1,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 function Registration() {
@@ -15,7 +16,7 @@ function Registration() {
       }
       
     return(
-    <div>
+    <div className='component'>
         <h2>Inscription</h2>
         <form onSubmit={handleSubmit(onSubmit)}>
             <div className="label-input-container">
@@ -77,6 +78,12 @@ function Registration() {
               </button>
             </div>
       </form>
+      <Link
+      to={`/back-office`}
+      className='already-get-count'
+      >
+        Déjà un compte
+      </Link>
     </div>
     )
 }

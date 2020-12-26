@@ -9,7 +9,7 @@ const TabataHome = () => {
     const [showTabataExercices, setShowTabataExercices] = useState(false);
 
     return (
-        <div className='random-tabata'>
+        <div className='random-tabata component'>
             <h2>Découvrez votre circuit Tabata du jour</h2>
             <Link to='/tabata/workout' >
                 <input

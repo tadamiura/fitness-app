@@ -23,7 +23,7 @@ function Authentification() {
       }
 
     return(
-    <div>
+    <div className='component'>
         <h2>Se connecter</h2>
         <form onSubmit={handleSubmit(onSubmit)}>
             <div className="label-input-container">
