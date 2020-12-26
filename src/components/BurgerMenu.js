@@ -61,6 +61,13 @@ const BurgerMenu = () => {
                 666 WOD
             </Link>
             <Link
+            to={`/registration`}
+            className='burgerMenu-Link'
+            onClick={hideMenuSide}
+            >
+                Créer un compte
+            </Link>
+            <Link
             to={`/back-office`}
             className='burgerMenu-Link'
             onClick={hideMenuSide}
