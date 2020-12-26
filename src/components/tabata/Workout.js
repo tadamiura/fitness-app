@@ -34,7 +34,7 @@ const Workout = () => {
             <Loader />
         </div>
         :(
-            <div className='display-exercice'>
+            <div className='display-exercice component'>
                 <DisplayExercice ex1={ex1} ex2={ex2} />
             </div>
         )

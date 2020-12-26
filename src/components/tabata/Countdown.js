@@ -47,7 +47,7 @@ class Countdown extends React.Component {
     render() {
         const { seconds, sets } = this.state
         return (
-            <div className="container-countdown">
+            <div className="container-countdown component">
                 {<div className="counter-info">
                     <h4>Temps restant : </h4>
                     {sets === 0 ?
