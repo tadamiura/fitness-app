@@ -3,8 +3,6 @@ import React, { useState } from 'react'
 import burgerMenu from '../img/burger-menu.png'
 import burgerClose from '../img/burger-close.png'
 
-// import './BurgerMenu.css'
-
 import { Link } from 'react-router-dom'
 
 const BurgerMenu = () => {
@@ -61,6 +59,13 @@ const BurgerMenu = () => {
             onClick={hideMenuSide}
             >
                 666 WOD
+            </Link>
+            <Link
+            to={`/back-office`}
+            className='burgerMenu-Link'
+            onClick={hideMenuSide}
+            >
+                Mon tableau de bord
             </Link>
             <Link
             to={`/about-tabata`}
