@@ -9,7 +9,7 @@ import evil from '../img/666.png'
 
 const Dashboard = () => {
     return (
-        <div className="dashboard">
+        <div className="dashboard component">
             <h2>Select the type of workout</h2>
             <div className="dashboard-menu">
                 <span className='cards'>

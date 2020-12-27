@@ -17,6 +17,7 @@
 @import './sass/footer.scss';
 @import './sass/form.scss';
 @import './sass/loader.scss';
+@import './sass/menu.scss';
 
 
 
@@ -40,7 +41,7 @@ body {
     margin: 0;
     padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .header h1 {
