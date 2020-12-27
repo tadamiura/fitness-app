@@ -33,6 +33,13 @@ const BurgerMenu = () => {
         />
         <div className='burgerMenu-links'>
             <Link
+            to={`/`}
+            className='burgerMenu-Link'
+            onClick={hideMenuSide}
+            >
+                Accueil
+            </Link>
+            <Link
             to={`/tabata/home`}
             className='burgerMenu-Link'
             onClick={hideMenuSide}

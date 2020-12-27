@@ -32,7 +32,7 @@ const Dashboard = () => {
                     </Link>
                 </span>
                 <span className='cards'>
-                    <Link to='back-office'>
+                    <Link to=''>
                     <img src={evil} alt="evil"></img>
                     <p>666 WOD</p>
                     </Link>
