@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Proptypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import ReactPlayer from 'react-player'
 import Directions from './Directions'
@@ -56,5 +57,11 @@ return( ex1 === null || ex2 === null
         </div>
         )
     
+    }
+    
+DisplayExercice.propTypes = {
+    ex1: Proptypes.object.isRequired,
+    ex2: Proptypes.object.isRequired,
 }
+
 export default DisplayExercice
