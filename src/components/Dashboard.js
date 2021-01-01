@@ -16,7 +16,7 @@ const Dashboard = () => {
                     <Link to='/tabata/home'
                     className='go-to-tabata'>
                     <img src={jumping} alt="jumping-jack"></img>
-                    <p>TABATA TRAINING</p>
+                    <p>Tabata Training</p>
                     </Link>
                 </span>
                 <span className='cards'>
