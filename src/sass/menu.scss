@@ -1,8 +1,9 @@
 @import '_variables';
 
 .burgerMenu-menu {
-    width: 40px;
+    width: 30px;
     cursor: pointer;
+    margin-top: 10px;
   }
   
   .burgerMenu-side {
@@ -32,7 +33,7 @@
   .burgerMenu-close {
     width: 30px;
     align-self: flex-end;
-    margin: 7px;
+    margin: 15px 7px 0 0;
     cursor: pointer;
   }
   

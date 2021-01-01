@@ -51,7 +51,7 @@ const BurgerMenu = () => {
             className='burgerMenu-Link'
             onClick={hideMenuSide}
             >
-                Countdown
+                Interval Training 30/30
             </Link>
             <Link
             to={`/`}
