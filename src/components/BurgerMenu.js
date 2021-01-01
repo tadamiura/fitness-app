@@ -47,7 +47,7 @@ const BurgerMenu = () => {
                 Tabata Training
             </Link>
             <Link
-            to={`/`}
+            to={`/it30/home`}
             className='burgerMenu-Link'
             onClick={hideMenuSide}
             >
