@@ -8,6 +8,9 @@ import Dashboard from './components/Dashboard'
 import ExerciceManagement from './components/backoffice/ExerciceManagement'
 import Footer from './components/Footer'
 import Header from './components/Header'
+import It30Home from './components/IT30/It30Home'
+import It30Countdown from './components/IT30/Countdown'
+import It30TabataWorkout from './components/IT30/Workout'
 import List from './components/backoffice/List'
 import NewExercice from './components/backoffice/NewExercice'
 import TabataHome from './components/tabata/TabataHome'
@@ -27,6 +30,9 @@ const App = () => {
           <Route path="/tabata/home" component={TabataHome}/>
           <Route path="/tabata/workout" component={TabataWorkout}/>
           <Route path="/tabata/countdown" component={Countdown} />
+          <Route path="/it30/home" component={It30Home}/>
+          <Route path="/it30/workout" component={It30TabataWorkout}/>
+          <Route path="/it30/countdown" component={It30Countdown} />
           <Route path="/about-me" component={AboutMe} />
           <Route path="/about-tabata" component={AboutTabata} />
           <Route path="/registration" component={Registration}/>
