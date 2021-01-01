@@ -20,7 +20,7 @@ const Dashboard = () => {
                     </Link>
                 </span>
                 <span className='cards'>
-                    <Link to=''>
+                    <Link to='/it30/home'>
                     <img src={it30} alt="interval-training 30-30"></img>
                     <p>Interval Training 30/30</p>
                     </Link>
