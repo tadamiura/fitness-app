@@ -1,9 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Directions from './Directions';
-import './TabataHome.css'
-
-
 
 const TabataHome = () => {
     const [showTabataExercices, setShowTabataExercices] = useState(false);
@@ -23,8 +20,5 @@ const TabataHome = () => {
         </div>
     )
 }
-
-
-
 
 export default TabataHome

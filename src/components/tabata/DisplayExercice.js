@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import ReactPlayer from 'react-player'
 import Directions from './Directions'
 import Loader from '../Loader'
-import '../../App.scss'
 
 const DisplayExercice = ({ ex1, ex2 }) =>{
 
@@ -47,7 +46,7 @@ return( ex1 === null || ex2 === null
                 <input
                     className='start-tabata-button'
                     type='button'
-                    value={!showCounter ? 'Start the countdown' : 'Stop the countdown'}
+                    value={!showCounter ? `Lancer le circuit` : `Arrêter le circuit`}
                     onClick={() => setShowCounter(!showCounter)}
                 />
             </Link>
