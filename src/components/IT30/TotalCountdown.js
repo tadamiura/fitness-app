@@ -1,9 +1,10 @@
 import React from 'react'
+// import './SetCountdown.css'
 
-class SetCountdown extends React.Component {
+class TotalCountdown extends React.Component {
     state = {
-        minutes: 1,
-        seconds: 30,
+        minutes: 8,
+        seconds: 0,
     }
 
     componentDidMount() {
@@ -34,12 +35,11 @@ class SetCountdown extends React.Component {
     render(){
         const { minutes, seconds } = this.state
         return(
-            <div className="set-countdown">
-                Rest time before to start a new workout : 
-                <h4>{`${minutes} min ${seconds} sec left`}</h4> 
+            <div className="total-countdown">
+                <h4>{`${minutes} min ${seconds} sec`}</h4> 
             </div>
         )
     }
 }
 
-    export default SetCountdown
+    export default TotalCountdown

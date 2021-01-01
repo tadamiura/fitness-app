@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import ReactPlayer from 'react-player'
-import Directions from './Directions'
+import Directions from './Directions.js'
 import Loader from '../Loader'
+import '../../App.scss'
 
 const DisplayExercice = ({ ex1, ex2 }) =>{
 
@@ -40,7 +41,7 @@ return( ex1 === null || ex2 === null
             </div>
             <div>
             <Link to={{
-                pathname: '/tabata/countdown',
+                pathname: '/it30/countdown',
                 state: {ex1, ex2}
             }}>
                 <input
