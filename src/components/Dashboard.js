@@ -13,6 +13,13 @@ const Dashboard = () => {
             <h2>Select the type of workout</h2>
             <div className="dashboard-menu">
                 <span className='cards'>
+                    <Link to='/warm-up/list'
+                    className='go-to-tabata'>
+                    <img src={jumping} alt="jumping-jack"></img>
+                    <p>Nos Echauffements</p>
+                    </Link>
+                </span>
+                <span className='cards'>
                     <Link to='/tabata/home'
                     className='go-to-tabata'>
                     <img src={jumping} alt="jumping-jack"></img>
