@@ -61,7 +61,7 @@ const BurgerMenu = () => {
                 21-15-9 WOD 
             </Link>
             <Link
-            to={`/`}
+            to={`/666-workout/home`}
             className='burgerMenu-Link'
             onClick={hideMenuSide}
             >

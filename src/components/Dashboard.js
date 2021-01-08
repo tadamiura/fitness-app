@@ -32,7 +32,7 @@ const Dashboard = () => {
                     </Link>
                 </span>
                 <span className='cards'>
-                    <Link to=''>
+                    <Link to='666-workout/home'>
                     <img src={evil} alt="evil"></img>
                     <p>666 WOD</p>
                     </Link>
