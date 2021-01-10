@@ -12,9 +12,9 @@ import It30Home from './components/IT30/It30Home'
 import It30Countdown from './components/IT30/Countdown'
 import It30TabataWorkout from './components/IT30/Workout'
 import List from './components/backoffice/List'
-import SixSixSixHome from './components/666 Workout/SixSixSixHome';
-import SixSixSixStopWatch from './components/666 Workout/SixSixSixStopWatch';
-import SixSixSixWorkout from './components/666 Workout/Workout'
+import SixSixSixHome from './components/666Workout/SixSixSixHome';
+import SixSixSixStopWatch from './components/666Workout/SixSixSixStopWatch';
+import SixSixSixWorkout from './components/666Workout/Workout'
 import NewExercice from './components/backoffice/NewExercice'
 import TabataHome from './components/tabata/TabataHome'
 import TabataWorkout from './components/tabata/Workout'

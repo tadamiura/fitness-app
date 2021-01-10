@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Directions from './Directions.js.js';
+import Directions from './Directions';
 
 const SixSixSixHome = () => {
 
