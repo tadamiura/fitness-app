@@ -5,13 +5,20 @@ import jumping from '../img/jumping.png'
 import it30 from '../img/IT30.png'
 import pushUp from '../img/pushUp.png'
 import evil from '../img/666.png'
-
+import warmUp from '../img/warm-up.png'
 
 const Dashboard = () => {
     return (
         <div className="dashboard component">
             <h2>Select the type of workout</h2>
             <div className="dashboard-menu">
+                <span className='cards'>
+                    <Link to='/warm-up/list'
+                    className='go-to-tabata'>
+                    <img src={warmUp} alt="jumping-jack"></img>
+                    <p>Nos Echauffements</p>
+                    </Link>
+                </span>
                 <span className='cards'>
                     <Link to='/tabata/home'
                     className='go-to-tabata'>
