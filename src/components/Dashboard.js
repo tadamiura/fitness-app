@@ -5,7 +5,7 @@ import jumping from '../img/jumping.png'
 import it30 from '../img/IT30.png'
 import pushUp from '../img/pushUp.png'
 import evil from '../img/666.png'
-
+import warmUp from '../img/warm-up.png'
 
 const Dashboard = () => {
     return (
@@ -15,7 +15,7 @@ const Dashboard = () => {
                 <span className='cards'>
                     <Link to='/warm-up/list'
                     className='go-to-tabata'>
-                    <img src={jumping} alt="jumping-jack"></img>
+                    <img src={warmUp} alt="jumping-jack"></img>
                     <p>Nos Echauffements</p>
                     </Link>
                 </span>
