@@ -16,6 +16,7 @@ import NewExercice from './components/backoffice/NewExercice'
 import TabataHome from './components/tabata/TabataHome'
 import TabataWorkout from './components/tabata/Workout'
 import Registration from './components/tabata/Registration'
+import WarmUpList from './components/warmup/WarmUpList'
 import { Switch, Route } from 'react-router-dom'
 
 import './App.scss';
@@ -27,6 +28,7 @@ const App = () => {
         <Header />
           <Switch>
           <Route exact path="/" component={Dashboard}/>
+          <Route path="/warm-up/list" component={WarmUpList}/>
           <Route path="/tabata/home" component={TabataHome}/>
           <Route path="/tabata/workout" component={TabataWorkout}/>
           <Route path="/tabata/countdown" component={Countdown} />
