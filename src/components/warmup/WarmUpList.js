@@ -22,19 +22,21 @@ const WarmUpList = () => {
     <Loader />
     </div>
     :(
-        <div className='component'>
-            <h2>Mes échauffements</h2>
+        <div className='warmup component'>
+            <h3>Mes échauffements</h3>
             {warmUp.map(el => 
-            <div>
-            <span className="exercice" key={el.id}>{el.name}</span>
-            <ReactPlayer 
-                url={el.url_name} 
-                controls={true}
-                height={180}
-                width={300}
-                style={{
-                margin: 'auto'
-                }}/>
+            <div key={el.id} className="exercice">
+            <h2>{el.name}</h2>
+                <div className="media">
+                    <ReactPlayer 
+                        url={el.url_name} 
+                        controls={true}
+                        height={180}
+                        width={290}
+                        style={{
+                        margin: 'auto'
+                        }}/>
+                </div>
             </div>    
             )}
         </div>
