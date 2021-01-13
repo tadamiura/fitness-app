@@ -1,13 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useHistory, Link } from 'react-router-dom'
 import Loader from '../Loader'
 
 const SixSixSixStopWatch = ({ ex1, ex2 }) => {
-    const[chrono, setChrono] = useState({
-        seconds: 0,
-        minutes: 0,
-    })
-
+    const [second, setSecond] = useState('00');
+    const [minute, setMinute] = useState('00');
+    const [isActive, setIsActive] = useState(false);
+    const [counter, setCounter] = useState(0);
     const[display1, setDisplay1] = useState({
         exercice1: true,
         exercice2: false,
@@ -16,28 +15,33 @@ const SixSixSixStopWatch = ({ ex1, ex2 }) => {
 
     const history = useHistory()
 
-    // const startChrono = () => {
-    //     setInterval(() => {
-    //         const {seconds, minutes} = chrono
-    //         setChrono(({ seconds }) => ({
-    //             seconds: seconds+1
-    //         }))
-    //         if(seconds >= 0 && seconds < 60) {
-    //             setChrono(({ seconds }) => ({
-    //                 seconds: seconds +1
-    //             }))
-    //         }
-    //         if (seconds === 60) {
-    //             console.log("là")
-    //             setChrono(({ minutes }) => ({
-    //                 minutes: minutes +1,
-    //                 seconds: 0
-    //             }))
-    //         }
-    //         console.log('seconds', chrono.seconds)
-    //     }, 100)
-    // }
-
+    const stopTimer = () => {
+        setIsActive(false);
+        setCounter(0);
+        setSecond('00');
+        setMinute('00')
+    }
+    
+    useEffect(() => {
+        let intervalId;
+    
+        if (isActive) {
+            intervalId = setInterval(() => {
+            const secondCounter = counter % 60;
+            const minuteCounter = Math.floor(counter / 60);
+    
+            const computedSecond = String(secondCounter).length === 1 ? `0${secondCounter}`: secondCounter;
+            const computedMinute = String(minuteCounter).length === 1 ? `0${minuteCounter}`: minuteCounter;
+    
+            setSecond(computedSecond);
+            setMinute(computedMinute);
+    
+            setCounter(counter => counter + 1);
+            }, 100)
+        }
+        return () => clearInterval(intervalId);
+    }, [isActive, counter])
+    
     const workoutManagement = () => {
         const { sets } = display1
             if(sets < 7){
@@ -57,11 +61,19 @@ const SixSixSixStopWatch = ({ ex1, ex2 }) => {
     </div>
     :(
     <div>
-        {/* <div>
-            <h2>Chrono</h2>
-            <button onClick={startChrono}>Start</button>
-            {chrono.minutes} : {chrono.seconds}
-        </div> */}
+        <div className="stopwatch-container">
+            <div className="time">
+                <span className="minute">{minute}</span>
+                <span>:</span>
+                <span className="second">{second}</span>
+            </div>
+            <div className="buttons">
+                <button onClick={() => setIsActive(!isActive)} className="start">
+                    {isActive ? "Pause": "Start"}
+                </button>
+                <button onClick={stopTimer} className="reset">Reset</button>
+            </div>
+        </div>
         <div className='workout-stopwatch component'>
             {display1.sets !== 7 
             ?
