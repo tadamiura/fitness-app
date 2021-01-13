@@ -12,6 +12,9 @@ import It30Home from './components/IT30/It30Home'
 import It30Countdown from './components/IT30/Countdown'
 import It30TabataWorkout from './components/IT30/Workout'
 import List from './components/backoffice/List'
+import SixSixSixHome from './components/666Workout/SixSixSixHome';
+import SixSixSixStopWatch from './components/666Workout/SixSixSixStopWatch';
+import SixSixSixWorkout from './components/666Workout/Workout'
 import NewExercice from './components/backoffice/NewExercice'
 import TabataHome from './components/tabata/TabataHome'
 import TabataWorkout from './components/tabata/Workout'
@@ -28,13 +31,25 @@ const App = () => {
         <Header />
           <Switch>
           <Route exact path="/" component={Dashboard}/>
+
+          {/* Warm Up Routes */}
           <Route path="/warm-up/list" component={WarmUpList}/>
+          
+          {/* TABATA Routes */}
           <Route path="/tabata/home" component={TabataHome}/>
           <Route path="/tabata/workout" component={TabataWorkout}/>
           <Route path="/tabata/countdown" component={Countdown} />
+
+          {/* Interval Training 30"/30" Routes */}
           <Route path="/it30/home" component={It30Home}/>
           <Route path="/it30/workout" component={It30TabataWorkout}/>
           <Route path="/it30/countdown" component={It30Countdown} />
+
+          {/* 666 WORKOUT Routes */}
+          <Route path="/666-workout/home" component={SixSixSixHome}/>
+          <Route path="/666-workout/workout" component={SixSixSixWorkout}/>
+          <Route path="/666-workout/stopwatch" component={SixSixSixStopWatch}/>
+
           <Route path="/about-me" component={AboutMe} />
           <Route path="/about-tabata" component={AboutTabata} />
           <Route path="/registration" component={Registration}/>

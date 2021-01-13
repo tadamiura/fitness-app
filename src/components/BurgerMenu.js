@@ -40,6 +40,13 @@ const BurgerMenu = () => {
                 Accueil
             </Link>
             <Link
+            to={`/warm-up/list`}
+            className='burgerMenu-Link'
+            onClick={hideMenuSide}
+            >
+                Echauffements
+            </Link>
+            <Link
             to={`/tabata/home`}
             className='burgerMenu-Link'
             onClick={hideMenuSide}
@@ -61,7 +68,7 @@ const BurgerMenu = () => {
                 21-15-9 WOD 
             </Link>
             <Link
-            to={`/`}
+            to={`/666-workout/home`}
             className='burgerMenu-Link'
             onClick={hideMenuSide}
             >

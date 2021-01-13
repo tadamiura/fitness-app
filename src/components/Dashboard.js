@@ -16,7 +16,7 @@ const Dashboard = () => {
                     <Link to='/warm-up/list'
                     className='go-to-tabata'>
                     <img src={warmUp} alt="jumping-jack"></img>
-                    <p>Nos Echauffements</p>
+                    <p>Echauffements</p>
                     </Link>
                 </span>
                 <span className='cards'>
@@ -39,7 +39,7 @@ const Dashboard = () => {
                     </Link>
                 </span>
                 <span className='cards'>
-                    <Link to=''>
+                    <Link to='666-workout/home'>
                     <img src={evil} alt="evil"></img>
                     <p>666 WOD</p>
                     </Link>

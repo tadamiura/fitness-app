@@ -18,6 +18,7 @@
 @import './sass/form.scss';
 @import './sass/loader.scss';
 @import './sass/menu.scss';
+@import './sass/stopwatch.scss';
 @import './sass/warm-up.scss';
 
 html {
@@ -122,6 +123,14 @@ form {
     color: $green-logo;
     border-radius: 10px;
     }
+}
+
+.bold{
+    font-weight: 800;
+}
+
+.uppercase{
+    text-transform: uppercase;
 }
 
 

@@ -17,3 +17,24 @@
         @extend .default-button;
     }
 }
+
+.workout-stopwatch{
+    margin: 0 20px;
+    text-align: center;
+    .workout-count-sets{
+        .sets-number{
+            font-weight: 900;
+            font-size: 1.5rem;
+            color: $green-logo;
+        }
+    }
+    .workout-exercice{
+        font-family: $secondary-font-family;    
+        font-size: 2rem;
+        color: $green-logo;
+        font-weight: 100;
+    }
+    .next-exercice{
+        margin: 20px 0;
+    }
+}

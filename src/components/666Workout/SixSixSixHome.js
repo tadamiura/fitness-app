@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Directions from './Directions.js';
+import Directions from './Directions';
 
-const It30Home = () => {
+const SixSixSixHome = () => {
 
     return (
         <div className='random-tabata component'>
-            <h2>Découvrez votre circuit 30"/30" du jour</h2>
-            <Link to='/it30/workout' >
+            <h2>Découvrez circuit "666" du jour</h2>
+            <Link to='/666-workout/workout' >
                 <input
                 className='tabata-button'
                 type='button'
@@ -19,4 +19,4 @@ const It30Home = () => {
     )
 }
 
-export default It30Home
+export default SixSixSixHome
