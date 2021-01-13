@@ -68,10 +68,10 @@ const SixSixSixStopWatch = ({ ex1, ex2 }) => {
                 <span className="second">{second}</span>
             </div>
             <div className="buttons">
-                <button onClick={() => setIsActive(!isActive)} className="start">
+                <button onClick={() => setIsActive(!isActive)} className="start-button">
                     {isActive ? "Pause": "Start"}
                 </button>
-                <button onClick={stopTimer} className="reset">Reset</button>
+                <button onClick={stopTimer} className="reset-button reset">Reset</button>
             </div>
         </div>
         <div className='workout-stopwatch component'>

@@ -1,5 +1,36 @@
 @import '_variables';
 
+.start-button {
+    display: inline-block;
+    position: relative;
+    font-family: $secondary-font-family;    
+    font-size: large;
+    padding: 0.5em 0.8em;
+    text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+	color: #FFF;
+    background: $green-logo;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+
+.reset-button {
+	display: inline-block;
+    position: relative;
+    font-family: $secondary-font-family;    
+    font-size: large;
+    padding: 0.5em 0.8em;
+    text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+	color: #FFF;
+    background: #2e437e;
+    border-radius: 15px;
+}
+
 .default-button {
 	display: inline-block;
     position: relative;
@@ -10,9 +41,9 @@
 	text-align: center;
 	cursor: pointer;
 	user-select: none;
-	color: $green-logo;
-    background: linear-gradient(135deg, #2e437e, #406bdf);
-    border-radius: 40px;
+	color: #FFF;
+    background: #2e437e;
+    border-radius: 15px;
 }
 
 .update-button {
