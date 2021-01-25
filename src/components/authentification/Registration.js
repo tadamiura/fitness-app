@@ -79,7 +79,7 @@ function Registration() {
             </div>
       </form>
       <Link
-      to={`/back-office`}
+      to={`/auth/login`}
       className='already-get-count'
       >
         Déjà un compte
