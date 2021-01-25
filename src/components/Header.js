@@ -7,11 +7,15 @@ const Header = () => {
     return(
         <div>
             <header className="header">
-            <BurgerMenu />
-            <Link
-            to={`/`}>
-                <img className="ww-logo" src={logo} alt="logo"/>    
-            </Link>
+                <BurgerMenu />
+                <Link
+                to={`/`}>
+                    <img className="ww-logo" src={logo} alt="logo"/>    
+                </Link>
+                <Link
+                to={`/auth/login`}>
+                    <button className="header-login">Me connecter</button>
+                </Link>
             </header>
         </div>
     )
