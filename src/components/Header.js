@@ -14,7 +14,7 @@ const Header = () => {
                 </Link>
                 <Link
                 to={`/auth/login`}>
-                    <button className="header-login">Me connecter</button>
+                    <button className="header-login">Se connecter</button>
                 </Link>
             </header>
         </div>
