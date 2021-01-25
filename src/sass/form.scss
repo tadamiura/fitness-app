@@ -1,5 +1,41 @@
 @import '_variables';
 
+form {
+    width: 80%;
+    margin: 25px auto;
+    text-align: center;
+    .label-input-container {
+        margin: 16px 0;
+        label {
+            font-size: $secondary-font-size;
+            font-family: $default-font-family;        
+        }
+        input {
+            margin-top: 10px;
+            width: 90%;
+            height: 25px;
+        }
+        .form-error-message {
+            color: red;
+            font-size: 10px;
+        }
+        .password-format-condition {
+            font-size: $text-font-size;
+            font-style: italic;
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+    }
+    button {
+    width: 120px;
+    height: 32px;
+    background: $backgroud-blue;
+    color: $green-logo;
+    border-radius: 40px;
+    font-family: $secondary-font-family;
+    }
+}
+
 .form-button-add {
     margin: 0 0 20px 0;
     display: inline-block;
@@ -34,7 +70,10 @@
         }
     }
 }
-
 .already-get-count {
-    margin-left: 10%;
+    font-size: 14px;
+    font-family: $default-font-family;
+    &:visited{
+        color: black
+    }
 }

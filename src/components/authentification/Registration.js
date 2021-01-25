@@ -77,13 +77,13 @@ function Registration() {
                   Valider
               </button>
             </div>
-      </form>
       <Link
-      to={`/back-office`}
+      to={`/auth/login`}
       className='already-get-count'
       >
         Déjà un compte
       </Link>
+      </form>
     </div>
     )
 }
