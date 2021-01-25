@@ -3,10 +3,13 @@
 form {
     width: 80%;
     margin: 25px auto;
+    text-align: center;
     .label-input-container {
         margin: 16px 0;
         label {
-            font-size: $secondary-font-size;        }
+            font-size: $secondary-font-size;
+            font-family: $default-font-family;        
+        }
         input {
             margin-top: 10px;
             width: 90%;
@@ -28,7 +31,8 @@ form {
     height: 32px;
     background: $backgroud-blue;
     color: $green-logo;
-    border-radius: 10px;
+    border-radius: 40px;
+    font-family: $secondary-font-family;
     }
 }
 
@@ -66,8 +70,10 @@ form {
         }
     }
 }
-
 .already-get-count {
-    margin-left: 10%;
     font-size: 14px;
+    font-family: $default-font-family;
+    &:visited{
+        color: black
+    }
 }
