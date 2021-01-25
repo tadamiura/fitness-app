@@ -32,7 +32,7 @@ const List = () => {
                 className='add-exercice-link'
                 >
                     <p className="exercice-name">ajouter un exercice<br></br>
-                    <FontAwesomeIcon icon={faPlus} size="2x" />
+                    <FontAwesomeIcon icon={faPlus} size="1x" />
                     </p>  
                 </Link>
                 {exercice.map(info => 
@@ -41,7 +41,7 @@ const List = () => {
                     className='exercice-link'
                     >
                         <p className="exercice-name" id={info.id}>{info.name}<br></br>
-                        <FontAwesomeIcon icon={faEdit} size="2x" />
+                        <FontAwesomeIcon icon={faEdit} size="1x" />
                         </p>  
                     </Link>
                 )}
