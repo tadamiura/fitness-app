@@ -42,16 +42,21 @@ body {
     padding: 10px;
     display: flex;
     justify-content: space-between;
-}
-
-.header h1 {
-    margin : 0;
-    padding-top: 20px ;
-}
-
-.ww-logo{
-    width: 70px;
-    height: 70px;
+    .ww-logo{
+        width: 70px;
+        height: 70px;
+    }
+    a {
+        margin: auto 0 ;
+        button{
+            color: #002381;
+            background-color: $green-logo;
+            border-radius: 40px;
+            outline: none;
+            font-size: $text-font-size;
+            font-family: $secondary-font-family;
+        }
+    }
 }
 
 h2 {
@@ -93,37 +98,7 @@ h2 {
     font-weight: 100;
 }
 
-form {
-    width: 80%;
-    margin: 25px auto;
-    .label-input-container {
-        margin: 16px 0;
-        label {
-            font-size: $secondary-font-size;        }
-        input {
-            margin-top: 10px;
-            width: 90%;
-            height: 25px;
-        }
-        .form-error-message {
-            color: red;
-            font-size: 10px;
-        }
-        .password-format-condition {
-            font-size: $text-font-size;
-            font-style: italic;
-            margin-top: 5px;
-            margin-bottom: 0;
-        }
-    }
-    button {
-    width: 120px;
-    height: 32px;
-    background: $backgroud-blue;
-    color: $green-logo;
-    border-radius: 10px;
-    }
-}
+
 
 .bold{
     font-weight: 800;
