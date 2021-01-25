@@ -1,5 +1,5 @@
 import React from 'react'
-import { useHistory } from 'react-router-dom'
+import { useHistory, Link } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import axios from 'axios'
 
@@ -60,6 +60,12 @@ function Authentification() {
               </button>
             </div>
       </form>
+      <Link
+      to={`/registration`}
+      className='already-get-count'
+      >
+        Pas encore de compte ?
+      </Link>
     </div>
     )
 }
