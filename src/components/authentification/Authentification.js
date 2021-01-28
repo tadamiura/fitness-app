@@ -19,7 +19,7 @@ function Authentification() {
           history.push('/back-office/exercices')        
         })
         .then((res) => alert(`Vous êtes désormais connectés`))
-        .catch((err) => alert(`Identifiants incorrects : ${err}`))
+        .catch((err) => alert(`Identifiants ou mot de passe incorrect`))
       }
 
     return(
