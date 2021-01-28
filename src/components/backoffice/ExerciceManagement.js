@@ -15,7 +15,9 @@ const ExerciceManagement = (props) => {
     }
 
     const handleChange = (e) => {
-        setExercice({ ...exercice, [e.target.name]: e.target.value })
+        const { name, value } = e.target
+        console.log(name, value)
+        setExercice({ ...exercice, [name]: value })
     }
 
     const token = localStorage.getItem('x-access-token')
@@ -48,6 +50,11 @@ const ExerciceManagement = (props) => {
             <h1>Visuel de l'exercice</h1>
             <div className="exercice-preview">
                 <span className="exercice">{exercice.name}</span>
+                <ul className="type-of-workout">Présent dans les circuits suivants :
+                    {exercice.is_six_workout === 1 ? <li>666 Workout</li> : ""}
+                    {exercice.is_tabata_workout === 1 ? <li>Tabata Workout</li> : ""}
+                    {exercice.is_thirty_thirty_workout === 1 ? <li>30/30 Workout</li> : ""}
+                </ul>
                 <ReactPlayer 
                     url={exercice.url_name} 
                     controls={true}
@@ -81,7 +88,7 @@ const ExerciceManagement = (props) => {
                     onChange={handleChange}
                     />
                 </div>
-                <input type='submit' value='Mettre à jour'
+                <input type="submit" value="Mettre à jour"
                 className="update-button"
                 />
             </form>

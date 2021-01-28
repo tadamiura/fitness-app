@@ -15,6 +15,13 @@
         .exercice{
             padding: 5px;
         }
+        ul {
+            list-style-type: none;
+            color: $default-color;
+            font-size: $secondary-font-size;
+            padding: 0;
+            font-family: $default-font-family;
+        }
     }
     .update-exercice{
         border: 1px solid rgba(240, 240, 240, 0.972);
