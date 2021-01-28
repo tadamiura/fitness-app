@@ -13,7 +13,7 @@ function Registration() {
     const onSubmit = data => {
         axios.post('/api/register', data)
         .then((res) => res.data)
-        .then((res) => alert(`Félicitations, votre profil a bien étét enrengistré`),
+        .then((res) => alert(`Bienvenue, votre profil a bien étét enrengistré`),
         history.push('/back-office'))
         .catch((err) => alert(`erreur : ${err.response.data} `))
       }
