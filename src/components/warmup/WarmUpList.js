@@ -17,17 +17,18 @@ const WarmUpList = () => {
     }
 
     useEffect(() => getWarmUpList(), [])
+
     return warmUp === null ?
     <div className='loader-component'>
     <Loader />
     </div>
     :(
         <div className='warmup component'>
-            <h3>Mes échauffements</h3>
+            <h1>Mes échauffements</h1>
             {warmUp.map(el => 
-            <div key={el.id} className="exercice">
+            <div key={el.id} className='exercice'>
             <h2>{el.name}</h2>
-                <div className="media">
+                <div className='media'>
                     <ReactPlayer 
                         url={el.url_name} 
                         controls={true}
