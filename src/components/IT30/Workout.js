@@ -14,7 +14,7 @@ const Workout = () => {
     const [ex2, setEx2] = useState(null)
 
     const getExercices = () => {
-        const url = '/api/exercices'
+        const url = '/api/exercices/workouts/it30'
         axios.get(url)
         .then((res) => { 
             const random1 = Math.floor(Math.random() * Math.floor(res.data.length))

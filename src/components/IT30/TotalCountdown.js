@@ -1,5 +1,4 @@
 import React from 'react'
-// import './SetCountdown.css'
 
 class TotalCountdown extends React.Component {
     state = {
@@ -42,4 +41,4 @@ class TotalCountdown extends React.Component {
     }
 }
 
-    export default TotalCountdown
+export default TotalCountdown

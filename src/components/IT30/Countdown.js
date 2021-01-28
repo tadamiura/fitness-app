@@ -84,7 +84,7 @@ class Countdown extends React.Component {
                     <Link to='/it30/home' >
                         <input type="button"
                         className="back-button"
-                        value={sets === 0 ? `get a new tabata training now` : `Retour` }
+                        value={sets === 0 ? `Nouveau circuit` : `Retour` }
                         />
                     </Link>
                 </div>
