@@ -15,7 +15,7 @@ function NewExercice () {
         const url = '/api/exercices'
         axios.post(url, data, {headers : {'Authorization' : `Bearer ${token}`}})
         .then((res) => res.data)
-        .then((res) => alert(`L'exercice a bien été ajouté dans la liste`))
+        .then(alert(`L'exercice a bien été ajouté dans la liste`))
         .catch((err) => alert(`erreur : ${err.response.data} `))
         .then(
             history.push('/back-office/exercices') 
