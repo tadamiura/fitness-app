@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import Directions from './Directions';
 
 const TabataHome = () => {
-    const [showTabataExercices, setShowTabataExercices] = useState(false);
 
     return (
         <div className='random-tabata component'>
@@ -12,8 +11,7 @@ const TabataHome = () => {
                 <input
                 className='tabata-button'
                 type='button'
-                value={!showTabataExercices ? 'Afficher les exercices' : 'Afficher un nouveau circuit'}
-                onClick={() => setShowTabataExercices(!showTabataExercices)}
+                value='Afficher les exercices'
                 />
             </Link>
             <Directions />
