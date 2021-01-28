@@ -1,6 +1,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
-import { useHistory } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import axios from 'axios'
 
 function NewExercice () {
@@ -15,7 +15,7 @@ function NewExercice () {
         const url = '/api/exercices'
         axios.post(url, data, {headers : {'Authorization' : `Bearer ${token}`}})
         .then((res) => res.data)
-        .then((res) => alert(`L'exercice a bien été ajouté dans la liste`))
+        .then(alert(`L'exercice a bien été ajouté dans la liste`))
         .catch((err) => alert(`erreur : ${err.response.data} `))
         .then(
             history.push('/back-office/exercices') 
@@ -24,7 +24,7 @@ function NewExercice () {
 
     return(
         <div className="component form-add-exercice">
-            <h1 className="form-title">Ajouter un exercice</h1>
+            <h2 className="form-title">Ajouter un exercice</h2>
             <form className="add-exercice-form" 
             onSubmit={handleSubmit(onSubmit)}
             >
@@ -37,8 +37,8 @@ function NewExercice () {
                     placeholder="nouvel exercice"
                     ref={register({ required: true })}
                     />
-                    <br/>
                     <p className="form-error-message">{errors.name && "Un nom d'exercice est requis"}</p>
+                    <br/>
                     <label>Lien YOUTUBE de l'exercice</label>
                     <br/>
                     <input className="form-input" 
@@ -46,12 +46,18 @@ function NewExercice () {
                     placeholder="lien youtube du nouveau exercice" 
                     ref={register}
                     />
-                    <br/>
+                    <br />
                     <input className="form-button-add" 
                     type="submit" 
                     value="Ajouter"
                     disabled={formState.isSubmitting} 
-                    />  
+                    />
+                    <br />
+                    <Link
+                    to={`/back-office/exercices`}
+                    >
+                        <button className='return-button'>Retour</button>
+                    </Link>
                 </div>
             </form>
         </div>

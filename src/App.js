@@ -35,7 +35,7 @@ const App = () => {
           {/* Warm Up Routes */}
           <Route path="/warm-up/list" component={WarmUpList}/>
           
-          {/* TABATA Routes */}
+          {/* Tabata Routes */}
           <Route path="/tabata/home" component={TabataHome}/>
           <Route path="/tabata/workout" component={TabataWorkout}/>
           <Route path="/tabata/countdown" component={Countdown} />
@@ -45,7 +45,7 @@ const App = () => {
           <Route path="/it30/workout" component={It30TabataWorkout}/>
           <Route path="/it30/countdown" component={It30Countdown} />
 
-          {/* 666 WORKOUT Routes */}
+          {/* 666 workout Routes */}
           <Route path="/666-workout/home" component={SixSixSixHome}/>
           <Route path="/666-workout/workout" component={SixSixSixWorkout}/>
           <Route path="/666-workout/stopwatch" component={SixSixSixStopWatch}/>

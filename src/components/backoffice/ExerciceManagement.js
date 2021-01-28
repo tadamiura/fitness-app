@@ -8,6 +8,7 @@ import axios from 'axios'
 const ExerciceManagement = (props) => {
 
     const [exercice, setExercice] = useState(null)
+    const [preview, setPreview] = useState(false)
     const url = `/api/exercices/${props.match.params.id}`
     const getExercice = () => {
         axios.get(url)
@@ -15,7 +16,9 @@ const ExerciceManagement = (props) => {
     }
 
     const handleChange = (e) => {
-        setExercice({ ...exercice, [e.target.name]: e.target.value })
+        const { name, value } = e.target
+        console.log(name, value)
+        setExercice({ ...exercice, [name]: value })
     }
 
     const token = localStorage.getItem('x-access-token')
@@ -45,8 +48,10 @@ const ExerciceManagement = (props) => {
         <Loader />
         :
         <div className="component exercice-management">
-            <h1>Visuel de l'exercice</h1>
+            <button className="default-button" onClick={() => setPreview(!preview)}>{!preview ? 'Voir le visuel' : 'cacher le visuel'}</button>
+            {preview ?
             <div className="exercice-preview">
+                <h1>Visuel de l'exercice</h1>
                 <span className="exercice">{exercice.name}</span>
                 <ReactPlayer 
                     url={exercice.url_name} 
@@ -56,7 +61,15 @@ const ExerciceManagement = (props) => {
                     style={{
                     margin: 'auto'
                 }}/>
+                <ul className="type-of-workout">Présent dans les circuits suivants :
+                    {exercice.is_six_workout === 1 ? <li>666 Workout</li> : ""}
+                    {exercice.is_tabata_workout === 1 ? <li>Tabata Workout</li> : ""}
+                    {exercice.is_thirty_thirty_workout === 1 ? <li>30/30 Workout</li> : ""}
+                </ul>
             </div>
+            :
+            ""
+             }
 
             <form onSubmit={handleSubmit}
             className="update-exercice">
@@ -81,7 +94,7 @@ const ExerciceManagement = (props) => {
                     onChange={handleChange}
                     />
                 </div>
-                <input type='submit' value='Mettre à jour'
+                <input type="submit" value="Mettre à jour"
                 className="update-button"
                 />
             </form>

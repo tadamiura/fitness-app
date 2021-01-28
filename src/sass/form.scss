@@ -37,19 +37,12 @@ form {
 }
 
 .form-button-add {
-    margin: 0 0 20px 0;
-    display: inline-block;
-    position: relative;
-    font-family: 'Anton', sans-serif;    
-    font-size: small;
-    padding: 1em 1.8em;
-    text-decoration: none;
-	text-align: center;
-	cursor: pointer;
-	user-select: none;
-	color: #00ea92;
-    background: linear-gradient(135deg, #2e437e, #406bdf);
+    width: 120px;
+    height: 32px;
+    background: $backgroud-blue;
+    color: $green-logo;
     border-radius: 40px;
+    font-family: $secondary-font-family;
 }
 
 .form-input {
@@ -67,6 +60,15 @@ form {
         }
         input{
             font-size: $secondary-font-size;
+        }
+        .form-error-message {
+            color: red;
+            font-size: 10px;
+        }
+        .return-button {
+            margin-top: 10px;
+            color: $backgroud-blue;
+            background: transparent;
         }
     }
 }

@@ -37,7 +37,7 @@ const SixSixSixStopWatch = ({ ex1, ex2 }) => {
             setMinute(computedMinute);
     
             setCounter(counter => counter + 1);
-            }, 100)
+            }, 1000)
         }
         return () => clearInterval(intervalId);
     }, [isActive, counter])

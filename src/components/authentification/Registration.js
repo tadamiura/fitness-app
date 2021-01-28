@@ -1,6 +1,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
-import { Link } from 'react-router-dom'
+import { useHistory, Link } from 'react-router-dom'
 import axios from 'axios'
 
 function Registration() {
@@ -8,10 +8,13 @@ function Registration() {
         mode: "onblur"
     })
 
+    const history = useHistory()
+
     const onSubmit = data => {
         axios.post('/api/register', data)
         .then((res) => res.data)
-        .then((res) => alert(`Félicitations, votre profil a bien étét enrengistré`))
+        .then((res) => alert(`Bienvenue, votre profil a bien étét enrengistré`),
+        history.push('/back-office'))
         .catch((err) => alert(`erreur : ${err.response.data} `))
       }
       
