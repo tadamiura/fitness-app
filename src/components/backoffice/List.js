@@ -25,6 +25,7 @@ const List = () => {
     </div>
     : (
         <div className="exercices-list">
+            <a name="top"></a>
             <h2 className="exercices-list-title">Liste actuelle des exercices</h2>
             <div className="exercices-list-name">
                 <Link 
@@ -45,6 +46,9 @@ const List = () => {
                         </p>  
                     </Link>
                 )}
+                <a href='#top'>
+                    <button className="default-button">Haut de page</button>
+                </a>
             </div>
         </div>
     )
