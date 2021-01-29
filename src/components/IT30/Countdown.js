@@ -30,7 +30,7 @@ class Countdown extends React.Component {
                     }))
                 }
             }
-        }, 1000)
+        }, 10)
     }
 
     componentWillUnmount() {
@@ -45,8 +45,8 @@ class Countdown extends React.Component {
                     <h4>Temps restant : </h4>
                     {sets === 0 ?
                         <p className="congrats-message">
-                            {`Congrats this HIIT is over.
-                            After each training, you must be pround of you !`}
+                            Félicitations !<br></br>
+                            Vous pouvez être fier de vous !
                             <SetCountdown />
                         </p>
                         :   

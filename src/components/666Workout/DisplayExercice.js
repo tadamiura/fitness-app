@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import ReactPlayer from 'react-player'
 import Directions from './Directions'
@@ -6,9 +6,6 @@ import Loader from '../Loader'
 import '../../App.scss'
 
 const DisplayExercice = ({ ex1, ex2 }) =>{
-
-    const [showCounter, setShowCounter] = useState(false);
-
 
 return( ex1 === null || ex2 === null
         ?
@@ -47,8 +44,7 @@ return( ex1 === null || ex2 === null
                 <input
                     className='start-tabata-button'
                     type='button'
-                    value={!showCounter ? `Lancer le circuit` : `Arrêter le circuit`}
-                    onClick={() => setShowCounter(!showCounter)}
+                    value="Lancer le circuit"
                 />
             </Link>
             <Directions />

@@ -35,8 +35,8 @@ class SetCountdown extends React.Component {
         const { minutes, seconds } = this.state
         return(
             <div className="set-countdown">
-                Rest time before to start a new workout : 
-                <h4>{`${minutes} min ${seconds} sec left`}</h4> 
+                <p>Temps restant avant le prochain circuit : </p>
+                <p>{`${minutes} min ${seconds} sec left`}</p> 
             </div>
         )
     }
